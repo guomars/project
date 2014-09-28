@@ -1,0 +1,8 @@
+
+class MyTestClass
+{
+    static MyTestClass * Create(int a, char b, float c);
+    void PRINT();
+    int TOTAL();
+};
+

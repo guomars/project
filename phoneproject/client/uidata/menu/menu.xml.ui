@@ -1,0 +1,20 @@
+<?xml version="1.0"?>
+<UIProject xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <filePath>D:\kapai2\cocos2d-x_2.1.5a\projects\uidata\menu\menu.xml.ui</filePath>
+  <Version>1.1.0.0</Version>
+  <Name>menu</Name>
+  <ProjectDir>D:\kapai2\cocos2d-x_2.1.5a\projects\uidata\menu</ProjectDir>
+  <JsonFileName>menu.json</JsonFileName>
+  <Resources>D:\kapai2\cocos2d-x_2.1.5a\projects\uidata\menu\Resources</Resources>
+  <JsonFolder>D:\kapai2\cocos2d-x_2.1.5a\projects\uidata\menu\Json</JsonFolder>
+  <JsonList>
+    <string>menu.json</string>
+  </JsonList>
+  <imageFileList />
+  <JsonSuffix>.json</JsonSuffix>
+  <CurrentUIJson />
+  <CanvasSize>
+    <Width>1024</Width>
+    <Height>768</Height>
+  </CanvasSize>
+</UIProject>

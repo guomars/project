@@ -1,0 +1,19 @@
+namespace aeditor {
+
+class AEParamAmmend {
+		static AEParamAmmend * create();
+		void AddPos(int index, CCPoint & pos);
+		void AddSprite(std::string str, CCNode* node);
+};
+
+class ActionTemplateTable : public CCNode
+{
+		static ActionTemplateTable* create(const std::string& fileName, CCScene* pScene, bool _isDebug = false);
+		void RunUIAction(const std::string& fileName, UIWidget* uiWidget);
+		int RunAeAction(CCNode* container, const std::string& fileName, CCCallFunc* onActionBefore = NULL, CCCallFunc* onActionDone = NULL);
+		int RunAeActionWithParam(CCNode* container, const std::string& fileName, AEParamAmmend* ammend, CCCallFunc* onActionBefore = NULL, CCCallFunc* onActionDone = NULL);
+		CCSprite* GetSpriteByName(CCNode* container, const std::string& spriteName);
+		bool RemoveByHandle(int handle);
+};
+
+}

@@ -1,0 +1,17 @@
+
+class NetworkMgr
+{
+		static NetworkMgr * sharedMgr();
+		
+    void ConnectServer(const char* ip, int port);
+    void CloseServer();
+    int GetNetworkType();
+    int  UnMarshalIntFromProtocol(int pType,const char*valueType);
+	void MarshalProtocolStart(int protocolType,int pType);
+	void MarshalIntToProtocol(const char*valueType,int value);
+	void MarshalStringToProtocol(const char*valueType,const char* value);
+	void MarshalProtocolEndAndSend();
+    
+    void c2s_CmdGameDataSend(int cmd_header_type,void*pData,int iSize);
+};
+

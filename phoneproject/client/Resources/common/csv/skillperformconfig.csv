@@ -1,0 +1,8 @@
+FCTB1.00,,,,,,,,
+索引,飞行速度(像素/秒),攻击力,击中之后的附加效果,是否会根据怪物移动调整自己位置,是否会根据怪物移动调整自己的角度,使用粒子效果,使用帧动画,击中之后的存在时间(秒)
+index,speed,attack,effect,move_with_monster,rotate_with_monster,particle,animation,life
+1,160,20,1,1,1,409dihuo02.plist,,0
+2,160,25,2,1,1,,arrow1.ae,0
+3,160,30,3,1,1,409dihuo02.plist,,0
+4,160,35,4,1,1,,arrow2.ae,0
+5,160,40,5,1,1,409dihuo02.plist,,0

@@ -1,0 +1,143 @@
+typedef enum
+{
+    UI_TEX_TYPE_LOCAL,
+    UI_TEX_TYPE_PLIST
+}TextureResType;
+
+class UIWidget : public CCObject , public UILayoutUnit
+{
+public:
+    UIWidget();
+    ~UIWidget();
+    void releaseResoures();
+    static UIWidget* create();
+    void initPressState(WidgetState state);
+    void setPressState(WidgetState state);
+    bool addChild(UIWidget* child);
+    bool removeChild(UIWidget* child,bool cleanup);
+    void removeFromParentAndCleanup(bool cleanup);
+    void removeAllChildrenAndCleanUp(bool cleanup);
+    void setWidgetZOrder(int z);
+    int getWidgetZOrder();
+    void reorderChild(UIWidget* child);
+    void setTouchEnable(bool enable, bool containChildren = false);
+    void updateChildrenTouchEnable(bool enable, bool containChildren);
+    bool isTouchEnable();
+    void setUpdateEnable(bool enable);
+    bool getUpdateEnable();
+    bool isFocus();
+    void setFocus(bool fucos);
+    void disable(bool containChildren = false);
+    void active(bool containChildren = false);
+    void updateChildrenActive();
+    void updateChildrenDisable();
+    bool isActive();
+    void updateBeTouchEnable(bool enable);
+    void setVisible(bool visible);
+    bool isVisible();
+    CCRect getRect();
+    CCRect getRelativeRect();
+    const CCSize& getContentSize(); 
+    void getLocationInWindow();
+    float getRelativeLeftPos();
+    float getRelativeBottomPos();
+    float getRelativeRightPos();
+    float getRelativeTopPos();
+    CCNode* getValidNode();
+    CCNode* getContainerNode();
+	void setWidgetParent(UIWidget* parent);
+    UIWidget* getWidgetParent();
+    UIWidget* getChildByName(const char* name);
+    UIWidget* getChildByTag(int tag);
+    CCArray* getChildren();
+    void addPushDownEvent(CCObject* target,SEL_PushEvent selector);
+    void addMoveEvent(CCObject* target,SEL_MoveEvent selector);
+    void addReleaseEvent(CCObject* target,SEL_ReleaseEvent selector);
+    void addCancelEvent(CCObject* target,SEL_CancelEvent selector);
+    //cocos2d property
+    void setPosition(const CCPoint &pos);
+    void setAnchorPoint(const CCPoint &pt);
+    void updateAnchorPoint();
+    const CCPoint& getPosition();
+    const CCPoint& getAnchorPoint();
+    void setScale(float scale);
+    float getScale();
+    void setScaleX(float scaleX);
+    float getScaleX();
+    void setScaleY(float scaleY);
+    float getScaleY();
+    void onScaleDirtyChanged();
+    void onScaleXDirtyChanged();
+    void onScaleYDirtyChanged();
+    void setRotation(float rotation);
+    float getRotation();
+    void setRotationX(float rotationX);
+    float getRotationX();
+    void setRotationY(float rotationY);
+    float getRotationY();
+    void setSkewX(float skewX);
+    float getSkewX();
+    void setSkewY(float skewY);
+    float getSkewY();
+    void setFlipX(bool flipX){};
+    bool isFlipX(){return false;};
+    void setFlipY(bool flipY){};
+    bool isFlipY(){return false;};
+    void setColor(const ccColor3B &color);
+    const ccColor3B& getColor();
+    void setOpacity(int opacity);
+    int getOpacity();
+    bool isCascadeOpacityEnabled();
+    void setCascadeOpacityEnabled(bool cascadeOpacityEnabled);
+    bool isCascadeColorEnabled();
+    void setCascadeColorEnabled(bool cascadeColorEnabled);
+    void setBlendFunc(ccBlendFunc blendFunc);
+    //cocos action
+    void setActionManager(CCActionManager* actionManager);
+    CCActionManager* getActionManager();
+    CCAction* runAction(CCAction* action);
+    void stopAllActions(void);
+    void stopAction(CCAction* action);
+    void stopActionByTag(int tag);
+    CCAction* getActionByTag(int tag);
+    
+	void setActionTag(int tag);
+	int getActionTag();
+    
+    void setNeedCheckVisibleDepandParent(bool need);
+    void didNotSelectSelf();
+    void onTouchBegan(const CCPoint &touchPoint);
+    void onTouchMoved(const CCPoint &touchPoint);
+    void onTouchEnded(const CCPoint &touchPoint);
+    void onTouchCancelled(const CCPoint &touchPoint);
+    void onTouchLongClicked(const CCPoint &touchPoint);
+    bool isClippingEnable(){return false;};
+    void update(float dt){};
+    bool pointAtSelfBody(const CCPoint &pt);
+    bool checkVisibleDependParent(const CCPoint &pt);
+    void checkChildInfo(int handleState,UIWidget* sender,const CCPoint &touchPoint);
+    //widget prop
+    float getAbsoluteScaleX();
+    float getAbsoluteScaleY();
+    bool getAbsoluteVisible();
+    void updateChildrenVisibleDirty(bool dirty);
+    void updateChildrenOpacityDirty(bool dirty);
+    void adaptSize(float xProportion,float yProportion);
+    void setCreateFromFile(bool is);
+    void setFileDesignSize(const CCSize &size);
+    const CCSize& getFileDesignSize();
+    void setUILayer(UILayer* uiLayer);
+    void updateChildrenUILayer(UILayer* uiLayer);
+    void structureChangedEvent();
+    void disableUpdate();
+    const CCPoint& getTouchStartPos();
+    const CCPoint& getTouchMovePos();
+    const CCPoint& getTouchEndPos();
+    void setWidgetTag(int tag);
+    int getWidgetTag();
+    void setName(const char* name);
+    const char* getName();
+    WidgetType getWidgetType();
+    WidgetName getWidgetName();
+    void setBindingAction(UIActionNode* actionNode);
+};

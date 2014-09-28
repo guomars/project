@@ -1,0 +1,20 @@
+<?xml version="1.0"?>
+<UIProject xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <filePath>D:\phoneproject\client\uidata\map1\map1.xml.ui</filePath>
+  <Version>1.1.0.0</Version>
+  <Name>map1</Name>
+  <ProjectDir>D:\phoneproject\client\uidata\map1</ProjectDir>
+  <JsonFileName>map1.json</JsonFileName>
+  <Resources>D:\phoneproject\client\uidata\map1\Resources</Resources>
+  <JsonFolder>D:\phoneproject\client\uidata\map1\Json</JsonFolder>
+  <JsonList>
+    <string>map1.json</string>
+  </JsonList>
+  <imageFileList />
+  <JsonSuffix>.json</JsonSuffix>
+  <CurrentUIJson>map1.json</CurrentUIJson>
+  <CanvasSize>
+    <Width>1024</Width>
+    <Height>768</Height>
+  </CanvasSize>
+</UIProject>

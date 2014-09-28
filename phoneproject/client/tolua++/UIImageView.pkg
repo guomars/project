@@ -1,0 +1,28 @@
+class UIImageView : public UIWidget
+{
+public:
+    static UIImageView* create();
+    void setTexture(const char* fileName,TextureResType texType = UI_TEX_TYPE_LOCAL);
+    void setTextureRect(const CCRect& rect);
+    void doubleClickEvent();
+    void checkDoubleClick(float dt);
+    void setDoubleClickEnable(bool able);
+    void setFlipX(bool flipX);
+    void setFlipY(bool flipY);
+    bool isFlipX();
+    bool isFlipY();
+    void setScale9Enable(bool able);
+    void setScale9Size(const CCSize &size);
+    void setDisplayFrame(CCSpriteFrame *pNewFrame);
+    void setSpriteFrame(CCSpriteFrame *pNewFrame);
+    void setPreferredSize(const CCSize& pSize);
+    void setInsetLeft(float insetLeft);
+    void setInsetTop(float insetTop);
+    void setInsetRight(float insetRight);
+    void setInsetBottom(float insetBottom);
+    void setCapInsets(const CCRect &capInsets);
+    CCNode* getValidNode();
+    void setAnchorPoint(const CCPoint &pt);
+    void onTouchBegan(const CCPoint &touchPoint);
+    void onTouchEnded(const CCPoint &touchPoint);
+};

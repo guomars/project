@@ -1,0 +1,262 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="..\Classes\action_editor\ActionStubs.h" />
+    <ClInclude Include="..\Classes\action_editor\AEAction.h" />
+    <ClInclude Include="..\Classes\action_editor\AERenderEffect.h" />
+    <ClInclude Include="..\Classes\action_editor\CCShake.h" />
+    <ClInclude Include="..\Classes\action_editor\CCStrokeLabel.h" />
+    <ClInclude Include="..\Classes\action_editor\FightConf.h" />
+    <ClInclude Include="..\Classes\action_editor\GridEffect.h" />
+    <ClInclude Include="..\Classes\action_editor\GridSprite.h" />
+    <ClInclude Include="..\Classes\action_editor\MPEffect.h" />
+    <ClInclude Include="..\Classes\cocos2dx_support\CCBProxy.h" />
+    <ClInclude Include="..\Classes\cocos2dx_support\CCLuaBridge.h" />
+    <ClInclude Include="..\Classes\cocos2dx_support\CCLuaEngine.h" />
+    <ClInclude Include="..\Classes\cocos2dx_support\CCLuaStack.h" />
+    <ClInclude Include="..\Classes\cocos2dx_support\CCLuaValue.h" />
+    <ClInclude Include="..\Classes\cocos2dx_support\Cocos2dxLuaLoader.h" />
+    <ClInclude Include="..\Classes\cocos2dx_support\LuaCocos2d.h" />
+    <ClInclude Include="..\Classes\cocos2dx_support\Lua_extensions_CCB.h" />
+    <ClInclude Include="..\Classes\cocos2dx_support\Lua_web_socket.h" />
+    <ClInclude Include="..\Classes\cocos2dx_support\tolua_fix.h" />
+    <ClInclude Include="..\Classes\include\AppDelegate.h" />
+    <ClInclude Include="..\Classes\include\AssetsUpdateMgr.h" />
+    <ClInclude Include="..\Classes\include\CocosGUIUtils.h" />
+    <ClInclude Include="..\Classes\include\Configs.h" />
+    <ClInclude Include="..\Classes\include\DataMgr.h" />
+    <ClInclude Include="..\Classes\include\EC_IvtrTypes.h" />
+    <ClInclude Include="..\Classes\include\EC_RoleTypes.h" />
+    <ClInclude Include="..\Classes\include\EventMgr.h" />
+    <ClInclude Include="..\Classes\include\gamedata.h" />
+    <ClInclude Include="..\Classes\include\GFuncMgr.h" />
+    <ClInclude Include="..\Classes\include\MapMgr.h" />
+    <ClInclude Include="..\Classes\include\MyTestClass.h" />
+    <ClInclude Include="..\Classes\include\NetworkMgr.h" />
+    <ClInclude Include="..\Classes\net\callid.hxx" />
+    <ClInclude Include="..\Classes\net\ClientManager.h" />
+    <ClInclude Include="..\Classes\net\EC_GPDataType.h" />
+    <ClInclude Include="..\Classes\net\EC_SendC2SCmds.h" />
+    <ClInclude Include="..\Classes\net\gnetdef.h" />
+    <ClInclude Include="..\Classes\net\protocol\challenge.hpp" />
+    <ClInclude Include="..\Classes\net\protocol\response.hpp" />
+    <ClInclude Include="..\Classes\net\protoerrno.h" />
+    <ClInclude Include="..\Classes\net\rpcdefs.h" />
+    <ClInclude Include="..\Classes\net\State.hxx" />
+    <ClInclude Include="..\Classes\platform\win32\gnactiveio.h" />
+    <ClInclude Include="..\Classes\platform\win32\gnbyteorder.h" />
+    <ClInclude Include="..\Classes\platform\win32\gncompress.h" />
+    <ClInclude Include="..\Classes\platform\win32\gnconf.h" />
+    <ClInclude Include="..\Classes\platform\win32\gncoordinate.h" />
+    <ClInclude Include="..\Classes\platform\win32\gnerrno.h" />
+    <ClInclude Include="..\Classes\platform\win32\gnmarshal.h" />
+    <ClInclude Include="..\Classes\platform\win32\gnmppc.h" />
+    <ClInclude Include="..\Classes\platform\win32\gnnetio.h" />
+    <ClInclude Include="..\Classes\platform\win32\gnoctets.h" />
+    <ClInclude Include="..\Classes\platform\win32\gnpassiveio.h" />
+    <ClInclude Include="..\Classes\platform\win32\gnpollio.h" />
+    <ClInclude Include="..\Classes\platform\win32\gnproto.h" />
+    <ClInclude Include="..\Classes\platform\win32\gnrpc.h" />
+    <ClInclude Include="..\Classes\platform\win32\gnsecure.h" />
+    <ClInclude Include="..\Classes\platform\win32\gntimer.h" />
+    <ClInclude Include="..\Classes\platform\win32\iolib.h" />
+    <ClInclude Include="..\Classes\platform\win32\sha256.h" />
+    <ClInclude Include="..\Classes\platform\win32\streamcompress.h" />
+    <ClInclude Include="..\Classes\platform\win32\zconf.h" />
+    <ClInclude Include="..\Classes\platform\win32\zlib.h" />
+    <ClInclude Include="..\Classes\util\A3DVector.h" />
+    <ClInclude Include="..\Classes\util\ABaseDef.h" />
+    <ClInclude Include="..\Classes\util\AChar.h" />
+    <ClInclude Include="..\Classes\util\Base64.h" />
+    <ClInclude Include="..\Classes\util\Counter.h" />
+    <ClInclude Include="..\Classes\util\csv.h" />
+    <ClInclude Include="..\Classes\util\csvtable.h" />
+    <ClInclude Include="..\Classes\util\gutil.h" />
+    <ClInclude Include="..\Classes\util\vector.h" />
+    <ClInclude Include="..\Classes\util\WStrToUTF8.h" />
+    <ClInclude Include="main.h" />
+    <ClInclude Include="resource.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="..\Classes\action_editor\ActionStubs.cpp" />
+    <ClCompile Include="..\Classes\action_editor\AEAction.cpp" />
+    <ClCompile Include="..\Classes\action_editor\AERenderEffect.cpp" />
+    <ClCompile Include="..\Classes\action_editor\CCShake.cpp" />
+    <ClCompile Include="..\Classes\action_editor\CCStrokeLabel.cpp" />
+    <ClCompile Include="..\Classes\action_editor\GridEffect.cpp" />
+    <ClCompile Include="..\Classes\action_editor\GridSprite.cpp" />
+    <ClCompile Include="..\Classes\action_editor\MPEffect.cpp" />
+    <ClCompile Include="..\Classes\cocos2dx_support\CCBProxy.cpp" />
+    <ClCompile Include="..\Classes\cocos2dx_support\CCLuaBridge.cpp" />
+    <ClCompile Include="..\Classes\cocos2dx_support\CCLuaEngine.cpp" />
+    <ClCompile Include="..\Classes\cocos2dx_support\CCLuaStack.cpp" />
+    <ClCompile Include="..\Classes\cocos2dx_support\CCLuaValue.cpp" />
+    <ClCompile Include="..\Classes\cocos2dx_support\Cocos2dxLuaLoader.cpp" />
+    <ClCompile Include="..\Classes\cocos2dx_support\LuaCocos2d.cpp" />
+    <ClCompile Include="..\Classes\cocos2dx_support\Lua_extensions_CCB.cpp" />
+    <ClCompile Include="..\Classes\cocos2dx_support\Lua_web_socket.cpp" />
+    <ClCompile Include="..\Classes\cocos2dx_support\MySelf.cpp" />
+    <ClCompile Include="..\Classes\cocos2dx_support\tolua_fix.c" />
+    <ClCompile Include="..\Classes\net\ClientManager.cpp" />
+    <ClCompile Include="..\Classes\net\EC_SendC2SCmds.cpp" />
+    <ClCompile Include="..\Classes\net\State.cxx" />
+    <ClCompile Include="..\Classes\net\stubs.cxx" />
+    <ClCompile Include="..\Classes\platform\win32\gncoordinate.cpp" />
+    <ClCompile Include="..\Classes\platform\win32\gnstatic.cpp" />
+    <ClCompile Include="..\Classes\platform\win32\sha256.cpp" />
+    <ClCompile Include="..\Classes\source\AppDelegate.cpp" />
+    <ClCompile Include="..\Classes\source\AssetsUpdateMgr.cpp" />
+    <ClCompile Include="..\Classes\source\CocosGUIUtils.cpp" />
+    <ClCompile Include="..\Classes\source\Configs.cpp" />
+    <ClCompile Include="..\Classes\source\DataMgr.cpp" />
+    <ClCompile Include="..\Classes\source\EventMgr.cpp" />
+    <ClCompile Include="..\Classes\source\gamedata.cpp" />
+    <ClCompile Include="..\Classes\source\GFuncMgr.cpp" />
+    <ClCompile Include="..\Classes\source\MapMgr.cpp" />
+    <ClCompile Include="..\Classes\source\MyTestClass.cpp" />
+    <ClCompile Include="..\Classes\source\NetworkMgr.cpp" />
+    <ClCompile Include="..\Classes\util\Base64.cpp" />
+    <ClCompile Include="..\Classes\util\csvtable.cpp" />
+    <ClCompile Include="..\Classes\util\gutil.cpp" />
+    <ClCompile Include="..\Classes\util\libcsv.c" />
+    <ClCompile Include="..\Classes\util\WStrToUTF8.cpp" />
+    <ClCompile Include="main.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="..\Classes\net\protocol\inl\challenge" />
+    <None Include="..\Classes\net\protocol\inl\response" />
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{6F532D7F-C070-4C56-8E3D-D4AC55D3A7EF}</ProjectGuid>
+    <ProjectName>project</ProjectName>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <CharacterSet>Unicode</CharacterSet>
+    <PlatformToolset>v100</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <CharacterSet>Unicode</CharacterSet>
+    <PlatformToolset>v100</PlatformToolset>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <OutDir>$(SolutionDir)$(Configuration).win32\</OutDir>
+    <IntDir>$(Configuration).win32\</IntDir>
+    <LinkIncremental>true</LinkIncremental>
+    <EmbedManifest>false</EmbedManifest>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <OutDir>$(SolutionDir)$(Configuration).win32\</OutDir>
+    <IntDir>$(Configuration).win32\</IntDir>
+    <LinkIncremental>false</LinkIncremental>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ClCompile>
+      <AdditionalIncludeDirectories>.;..\Classes\action_editor\;..\Classes\cocos2dx_support\;..\Classes\net;..\Classes\net\protocol;..\Classes\net\protocol\inl;..\Classes\net\protocol\rpcdata;..\Classes\platform\win32;..\Classes\include;..\Classes\util;..\Classes;$(SolutionDir)\extensions;$(SolutionDir)extensions\CocoGUILIB;$(SolutionDir)extensions\CocoGUILIB\BaseClasses;$(SolutionDir)extensions\CocoGUILIB\BaseClasses\Graphics;$(SolutionDir)extensions\CocoGUILIB\BaseClasses\Widget;$(SolutionDir)extensions\CocoGUILIB\CGraphics;$(SolutionDir)extensions\CocoGUILIB\System;$(SolutionDir)extensions\CocoGUILIB\Component;$(SolutionDir)extensions\CocoGUILIB\UIElements;$(SolutionDir)extensions\CocoGUILIB\System\Json;$(SolutionDir)extensions\CocoGUILIB\System\Json\lib_json;$(SolutionDir)extensions\CocoGUILIB\System\GUICCBReader;$(SolutionDir)extensions\CocoGUILIB\System\Json\json;$(SolutionDir)extensions\CCArmature\utils;$(SolutionDir)extensions\CCArmature\physics;$(SolutionDir)extensions\CCArmature\external_tool\tinyxml;$(SolutionDir)extensions\CCArmature\external_tool\Json\json;$(SolutionDir)extensions\CCArmature\external_tool\Json\lib_json;$(SolutionDir)extensions\CCArmature\external_tool\Json;$(SolutionDir)extensions\CCArmature\external_tool;$(SolutionDir)extensions\CCArmature\editor;$(SolutionDir)extensions\CCArmature\display\display_factory;$(SolutionDir)extensions\CCArmature\display;$(SolutionDir)extensions\CCArmature\datas\display_data;$(SolutionDir)extensions\CCArmature\datas;$(SolutionDir)extensions\CCArmature\animation;$(SolutionDir)extensions\CCArmature;$(SolutionDir)cocos2dx;$(SolutionDir)cocos2dx\include;$(SolutionDir)cocos2dx\kazmath\include;$(SolutionDir)cocos2dx\platform\win32;$(SolutionDir)cocos2dx\platform\third_party\win32;$(SolutionDir)cocos2dx\platform\third_party\win32\OGLES;$(SolutionDir)extensions\GUI\CCControlExtension;$(SolutionDir)extensions\CCBReader;$(SolutionDir)external;$(SolutionDir)CocosDenshion\include;$(SolutionDir)cocos2dx\platform\win32\libxml2;$(SolutionDir)extensions\GUI\CCEditBox;$(SolutionDir)cocos2dx\platform\win32\iconv;$(SolutionDir)cocos2dx\platform\third_party\win32\pthread;$(SolutionDir)cocos2dx\support\zip_support;$(SolutionDir)cocos2dx\platform\third_party\win32\zlib;$(SolutionDir)\scripting\lua\lua;$(SolutionDir)\scripting\lua\tolua;$(SolutionDir)\extensions\network;$(SolutionDir)\external\libwebsockets\win32\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <PrecompiledHeader>
+      </PrecompiledHeader>
+      <WarningLevel>Level3</WarningLevel>
+      <RuntimeLibrary>MultiThreadedDebugDLL</RuntimeLibrary>
+      <MinimalRebuild>true</MinimalRebuild>
+      <DebugInformationFormat>EditAndContinue</DebugInformationFormat>
+      <BasicRuntimeChecks>EnableFastChecks</BasicRuntimeChecks>
+      <Optimization>Disabled</Optimization>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;STRICT;_CRT_SECURE_NO_WARNINGS;_SCL_SECURE_NO_WARNINGS_DEBUG;COCOS2D_DEBUG=1;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <DisableSpecificWarnings>4267;4251;4244;%(DisableSpecificWarnings)</DisableSpecificWarnings>
+      <AdditionalOptions>/D "WIN32" %(AdditionalOptions)</AdditionalOptions>
+    </ClCompile>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+      <TargetMachine>MachineX86</TargetMachine>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <AdditionalLibraryDirectories>$(OutDir);%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalDependencies>libcocos2d.lib;opengl32.lib;glew32.lib;libBox2d.lib;libCocosDenshion.lib;libExtensions.lib;pthreadVCE2.lib;libcurl_imp.lib;websockets.lib;libxml2.lib;liblua.lib;lua51.lib;zlibwapi.lib;libzlib.lib;%(AdditionalDependencies)</AdditionalDependencies>
+    </Link>
+    <ResourceCompile>
+      <Culture>0x0409</Culture>
+      <AdditionalIncludeDirectories>$(IntDir);%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <PreprocessorDefinitions>_DEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+    </ResourceCompile>
+    <Midl>
+      <MkTypLibCompatible>false</MkTypLibCompatible>
+      <TargetEnvironment>Win32</TargetEnvironment>
+      <PreprocessorDefinitions>_DEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <HeaderFileName>project.h</HeaderFileName>
+      <InterfaceIdentifierFileName>project_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>project_p.c</ProxyFileName>
+      <GenerateStublessProxies>true</GenerateStublessProxies>
+      <TypeLibraryName>$(IntDir)/project.tlb</TypeLibraryName>
+      <DllDataFileName>
+      </DllDataFileName>
+    </Midl>
+    <BuildLog>
+      <Path>project.log</Path>
+    </BuildLog>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <ClCompile>
+      <AdditionalIncludeDirectories>.;..\Classes\action_editor\;..\Classes\cocos2dx_support\;..\Classes\net;..\Classes\net\protocol;..\Classes\net\protocol\inl;..\Classes\net\protocol\rpcdata;..\Classes\platform\win32;..\Classes\include;..\Classes\util;..\Classes;$(SolutionDir)\extensions;$(SolutionDir)extensions\CocoGUILIB;$(SolutionDir)extensions\CocoGUILIB\BaseClasses;$(SolutionDir)extensions\CocoGUILIB\BaseClasses\Graphics;$(SolutionDir)extensions\CocoGUILIB\BaseClasses\Widget;$(SolutionDir)extensions\CocoGUILIB\CGraphics;$(SolutionDir)extensions\CocoGUILIB\System;$(SolutionDir)extensions\CocoGUILIB\Component;$(SolutionDir)extensions\CocoGUILIB\UIElements;$(SolutionDir)extensions\CocoGUILIB\System\Json;$(SolutionDir)extensions\CocoGUILIB\System\Json\lib_json;$(SolutionDir)extensions\CocoGUILIB\System\GUICCBReader;$(SolutionDir)extensions\CocoGUILIB\System\Json\json;$(SolutionDir)extensions\CCArmature\utils;$(SolutionDir)extensions\CCArmature\physics;$(SolutionDir)extensions\CCArmature\external_tool\tinyxml;$(SolutionDir)extensions\CCArmature\external_tool\Json\json;$(SolutionDir)extensions\CCArmature\external_tool\Json\lib_json;$(SolutionDir)extensions\CCArmature\external_tool\Json;$(SolutionDir)extensions\CCArmature\external_tool;$(SolutionDir)extensions\CCArmature\editor;$(SolutionDir)extensions\CCArmature\display\display_factory;$(SolutionDir)extensions\CCArmature\display;$(SolutionDir)extensions\CCArmature\datas\display_data;$(SolutionDir)extensions\CCArmature\datas;$(SolutionDir)extensions\CCArmature\animation;$(SolutionDir)extensions\CCArmature;$(SolutionDir)cocos2dx;$(SolutionDir)cocos2dx\include;$(SolutionDir)cocos2dx\kazmath\include;$(SolutionDir)cocos2dx\platform\win32;$(SolutionDir)cocos2dx\platform\third_party\win32;$(SolutionDir)cocos2dx\platform\third_party\win32\OGLES;$(SolutionDir)extensions\GUI\CCControlExtension;$(SolutionDir)extensions\CCBReader;$(SolutionDir)external;$(SolutionDir)CocosDenshion\include;$(SolutionDir)cocos2dx\platform\win32\libxml2;$(SolutionDir)extensions\GUI\CCEditBox;$(SolutionDir)cocos2dx\platform\win32\iconv;$(SolutionDir)cocos2dx\platform\third_party\win32\pthread;$(SolutionDir)cocos2dx\support\zip_support;$(SolutionDir)cocos2dx\platform\third_party\win32\zlib;$(SolutionDir)\scripting\lua\lua;$(SolutionDir)\scripting\lua\tolua;$(SolutionDir)\extensions\network;$(SolutionDir)\external\libwebsockets\win32\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <PrecompiledHeader>
+      </PrecompiledHeader>
+      <WarningLevel>Level3</WarningLevel>
+      <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
+      <ExceptionHandling>
+      </ExceptionHandling>
+      <DebugInformationFormat>
+      </DebugInformationFormat>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;STRICT;_CRT_SECURE_NO_WARNINGS;_SCL_SECURE_NO_WARNINGSNDEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <DisableSpecificWarnings>4267;4251;4244;%(DisableSpecificWarnings)</DisableSpecificWarnings>
+      <AdditionalOptions>/D "WIN32" /EHsc %(AdditionalOptions)</AdditionalOptions>
+    </ClCompile>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+      <TargetMachine>MachineX86</TargetMachine>
+      <AdditionalLibraryDirectories>$(OutDir);%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalDependencies>libcocos2d.lib;opengl32.lib;glew32.lib;libBox2d.lib;libCocosDenshion.lib;libExtensions.lib;pthreadVCE2.lib;libcurl_imp.lib;websockets.lib;libxml2.lib;liblua.lib;lua51.lib;zlibwapi.lib;libzlib.lib;%(AdditionalDependencies)</AdditionalDependencies>
+    </Link>
+    <ResourceCompile>
+      <Culture>0x0409</Culture>
+      <AdditionalIncludeDirectories>$(IntDir);%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <PreprocessorDefinitions>NDEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+    </ResourceCompile>
+    <Midl>
+      <MkTypLibCompatible>false</MkTypLibCompatible>
+      <TargetEnvironment>Win32</TargetEnvironment>
+      <PreprocessorDefinitions>NDEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <HeaderFileName>project.h</HeaderFileName>
+      <InterfaceIdentifierFileName>project_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>project_p.c</ProxyFileName>
+      <GenerateStublessProxies>true</GenerateStublessProxies>
+      <TypeLibraryName>$(IntDir)/project.tlb</TypeLibraryName>
+      <DllDataFileName>
+      </DllDataFileName>
+    </Midl>
+  </ItemDefinitionGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>

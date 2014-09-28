@@ -1,0 +1,23 @@
+class UILabel : public UIWidget
+{
+public:
+    static UILabel* create();
+    void setText(const char* text);
+	void setTextDefinition(ccFontDefinition *theDefinition);
+    const char* getStringValue();
+    int getStringLength();
+    void setFontSize(int size);
+    void setFontName(const char* name);
+	void getFontName(std::string& strFontName) { strFontName = m_pRenderLabel->getFontName(); }
+    void setTouchScaleChangeAble(bool able);
+    bool getTouchScaleChangeAble();
+    void clickScale(float scale);
+    virtual void setFlipX(bool flipX);
+    virtual void setFlipY(bool flipY);
+    virtual bool isFlipX();
+    virtual bool isFlipY();
+    void setGravity(LabelGravity gravity);
+    virtual void adaptSize(float xProportion,float yProportion);
+    virtual CCNode* getValidNode();
+    virtual void setAnchorPoint(const CCPoint &pt);
+};

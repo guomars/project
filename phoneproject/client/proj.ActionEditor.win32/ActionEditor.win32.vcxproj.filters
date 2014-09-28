@@ -1,0 +1,96 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="source">
+      <UniqueIdentifier>{3023a3bc-e261-4220-96d6-edde0e8fc37f}</UniqueIdentifier>
+      <Extensions>cpp;c;cxx;def;odl;idl;hpj;bat;asm</Extensions>
+    </Filter>
+    <Filter Include="include">
+      <UniqueIdentifier>{b04cc15c-c80e-4c54-a5f2-7074c1bae5b7}</UniqueIdentifier>
+      <Extensions>h;hpp;hxx;hm;inl;inc</Extensions>
+    </Filter>
+    <Filter Include="resource">
+      <UniqueIdentifier>{2e6d85e0-4d40-46a5-965e-e8b16c247f43}</UniqueIdentifier>
+      <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;jpg;jpeg;jpe;png;manifest</Extensions>
+    </Filter>
+    <Filter Include="ActionEditor">
+      <UniqueIdentifier>{f26b76ec-503b-427a-8c57-00e8968fc530}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="..\Classes\action_editor\ActionStubs.h">
+      <Filter>ActionEditor</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\action_editor\AEAction.h">
+      <Filter>ActionEditor</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\action_editor\AERenderEffect.h">
+      <Filter>ActionEditor</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\action_editor\CCStrokeLabel.h">
+      <Filter>ActionEditor</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\action_editor\FightConf.h">
+      <Filter>ActionEditor</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\action_editor\GridEffect.h">
+      <Filter>ActionEditor</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\action_editor\GridSprite.h">
+      <Filter>ActionEditor</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\action_editor\MPEffect.h">
+      <Filter>ActionEditor</Filter>
+    </ClInclude>
+    <ClInclude Include="AppDelegate.h">
+      <Filter>include</Filter>
+    </ClInclude>
+    <ClInclude Include="main.h">
+      <Filter>include</Filter>
+    </ClInclude>
+    <ClInclude Include="resource.h">
+      <Filter>include</Filter>
+    </ClInclude>
+    <ClInclude Include="HelloWorldScene.h">
+      <Filter>include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\action_editor\CCShake.h">
+      <Filter>ActionEditor</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="..\Classes\action_editor\ActionStubs.cpp">
+      <Filter>ActionEditor</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\action_editor\AEAction.cpp">
+      <Filter>ActionEditor</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\action_editor\AERenderEffect.cpp">
+      <Filter>ActionEditor</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\action_editor\CCStrokeLabel.cpp">
+      <Filter>ActionEditor</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\action_editor\GridEffect.cpp">
+      <Filter>ActionEditor</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\action_editor\GridSprite.cpp">
+      <Filter>ActionEditor</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\action_editor\MPEffect.cpp">
+      <Filter>ActionEditor</Filter>
+    </ClCompile>
+    <ClCompile Include="AppDelegate.cpp">
+      <Filter>source</Filter>
+    </ClCompile>
+    <ClCompile Include="main.cpp">
+      <Filter>source</Filter>
+    </ClCompile>
+    <ClCompile Include="HelloWorldScene.cpp">
+      <Filter>source</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\action_editor\CCShake.cpp">
+      <Filter>ActionEditor</Filter>
+    </ClCompile>
+  </ItemGroup>
+</Project>

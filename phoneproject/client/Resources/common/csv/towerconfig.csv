@@ -1,0 +1,4 @@
+FCTB1.00,,,,,,,,,,,,,,,,,,,,,,,,,,
+索引,建造箭塔价格,1级的图片,1级的技能,1级的视野,1级出售价格,1级升级到2级价格,2级的图片,2级的技能,2级的视野,2级出售价格,2级升级到3级价格,3级的图片,3级的技能,3级的视野,3级出售价格,3级升级到4级价格,4级的图片,4级的技能,4级的视野,4级出售价格,4级升级到5级价格,5级的图片,5级的技能,5级的视野范围,5级出售价格,5级升级到6级的价格
+index,build_cost,picture1,skills1,sight_range1,sell_price1,lvup_cost1,picture2,skills2,sight_range2,sell_price2,lvup_cost2,picture3,skills3,sight_range3,sell_price3,lvup_cost3,picture4,skills4,sight_range4,sell_price4,lvup_cost4,picture5,skills5,sight_range5,sell_price5,lvup_cost5
+1,20,t1_1.png,1,100,10,40,t1_2.png,2,150,30,60,t1_3.png,3,200,60,80,t1_4.png,4,250,100,100,t1_5.png,5,300,150,0

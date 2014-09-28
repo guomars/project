@@ -1,0 +1,15 @@
+class csvtable
+{
+		int Fields();
+		int Rows();
+		int Columns();
+		
+		const char * GetRecByColName(int keyid, const char * col_name);
+		const char * GetRecByColIndex(int keyid, int col_index);
+		const char * GetRecFromIndex(int RowIndex, int ColIndex);
+		int GetColIndex(const char * col_name);
+		int GetRowIndex(int keyid, int aux_col_index = -1, int aux_keyid = -1);
+};
+
+int InitDataTables(const char * path, const char * file, int table_type);
+csvtable * GetTable(const char * name);

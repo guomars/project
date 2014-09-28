@@ -1,0 +1,30 @@
+class UILayer : public CCLayer
+{
+    
+public:
+    
+    static UILayer *create(void);
+    
+    void onEnter();
+    void onExit();
+    void onEnterTransitionDidFinish();
+    
+    bool ccTouchBegan(CCTouch *pTouch, CCEvent *pEvent);
+    void ccTouchMoved(CCTouch *pTouch, CCEvent *pEvent);
+    void ccTouchEnded(CCTouch *pTouch, CCEvent *pEvent);
+    void ccTouchCancelled(CCTouch *pTouch, CCEvent *pEvent);
+    
+    void scheduleUpdate();
+    void addWidget(UIWidget* widget);
+    void removeWidgetAndCleanUp(UIWidget* widget,bool cleanup);
+    void setVisible(bool visible);
+    void update(float dt);
+    void addUpdateEnableWidget(UIWidget* widget);
+    void removeUpdateEnableWidget(UIWidget* widget);
+    UIWidget* getWidgetByTag(int tag);
+    UIWidget* getWidgetByName(const char* name);
+    UIInputManager* getInputManager();
+    void clear();
+    void dispose();
+    UIRootWidget* getRootWidget();
+};

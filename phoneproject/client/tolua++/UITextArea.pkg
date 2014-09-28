@@ -1,0 +1,22 @@
+class UITextArea : public UIWidget
+{
+public:
+    UITextArea();
+    static UITextArea* create();
+    virtual void initNodes();
+    void setText(const char* text);
+    void setTextAreaSize(const CCSize &size);
+    void setTextHorizontalAlignment(CCTextAlignment alignment);
+    void setTextVerticalAlignment(CCVerticalTextAlignment alignment);
+    int getStringLength();
+    const char* getStringValue();
+    void setTextColor(int r,int g,int b);
+    void setFontSize(int size);
+    void setFontName(const char* fontName);
+    void setFlipX(bool flipX);
+    void setFlipY(bool flipY);
+    bool isFlipX();
+    bool isFlipY();
+    CCNode* getValidNode();
+    void setAnchorPoint(const CCPoint &pt);
+};

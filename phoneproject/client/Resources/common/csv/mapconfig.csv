@@ -1,0 +1,4 @@
+FCTB1.00,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+索引,初始银币,地图csv文件,每一行所占像素,每一列所占像素,一共有几个点刷怪,第一个刷怪物的点的行号(从0开始),第一个刷怪物的点的列号(从0开始),第一个怪物目标的行号(从0开始),第一个怪物目标点的列号(从0开始),第二个刷怪物的点的行号(从0开始),第二个刷怪物的点的列号(从0开始),第二个怪物目标的行号(从0开始),第二个怪物目标点的列号(从0开始),第三个刷怪物的点的行号(从0开始),第三个刷怪物的点的列号(从0开始),第三个怪物目标的行号(从0开始),第三个怪物目标点的列号(从0开始),第四个刷怪物的点的行号(从0开始),第四个刷怪物的点的列号(从0开始),第四个怪物目标的行号(从0开始),第四个怪物目标点的列号(从0开始),一共有几波怪,第一波开始时间(秒),第一波刷怪类型,第一波刷怪数量,第一波刷怪点,第二波开始时间(秒),第二波刷怪类型,第二波刷怪数量,第二波刷怪点,第三波开始时间(秒),第三波刷怪类型,第三波刷怪数量,第三波刷怪点
+index,init_money,csvfile,row_size,col_size,refresh_pos_num,begin_row1,begin_col1,end_row1,end_col1,begin_row2,begin_col2,end_row2,end_col2,begin_row3,begin_col3,end_row3,end_col3,begin_row4,begin_col4,end_row4,end_col4,total_wave,begin_time1,refresh_type1,refresh_num1,refresh_pos1,begin_time2,refresh_type2,refresh_num2,refresh_pos2,begin_time3,refresh_type3,refresh_num3,refresh_pos3
+1,200,map1,84,110,2,6,0,3,5,0,10,3,5,0,0,0,0,0,0,0,0,3,5,1,10,1,10,2,20,2,10,3,30,1;2

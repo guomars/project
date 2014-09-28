@@ -1,0 +1,15 @@
+
+class DataMgr
+{
+    const char* GetString(const char*key, bool tofile=false);
+		void SetString(const char*key, const char*value, bool fromfile=false);
+	
+    int GetInt(const char*key, bool tofile=false);
+		void SetInt(const char*key,int value, bool fromfile=false);
+		
+		bool LoadFromFile(const char *fileName);
+		bool SaveToFile(const char *fileName = NULL);
+
+    static DataMgr * sharedMgr();
+};
+

@@ -1,0 +1,21 @@
+class download_param : public CCObject
+{
+		static download_param * create(std::string _src, std::string _des, std::string _sub_path, std::string _filename,
+		int _timeout, int _trytime, bool _use_base64, bool _use_resume, CCCallFunc* _script_download_finish_func);
+		bool getRet() const;
+};
+
+class update_param : public CCObject
+{
+		static update_param * create(std::string _resource_path, std::string _download_path, std::string _src, std::string _md5_file, int _timeout, int _trytime);
+		bool getRet() const;
+};
+
+class AssetsUpdateManager
+{
+		static AssetsUpdateManager* GetInstance();
+		bool CheckUpdate(update_param * pup);
+		std::string GetDocumentPath();
+    std::string GetTmpPath();
+    std::string GetCachePath();
+};

@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<aeditor>
+
+	<config totalSecond="99999" playSpeed="1" nextAE="" testDelaySecond="0" str1="" point1="(0,0)" str2="" point2="(0,0)" str3="" point3="(0,0)" str4="" point4="(0,0)" str5="" point5="(0,0)" testBackGround=""/>
+
+	<sprite name="monster" res="monsters/monster3.png" rotate="0" label="" isCloseButton="0" openNewAEButton="" font="" fontSize="12" fontColor="(255,255,255)" isHide="0" ry="" pos="P1" anchorPos="(0.5,0.5)" srcBlendFactor="GL_SRC_ALPHA" dstBlendFactor="GL_ONE_MINUS_SRC_ALPHA" aeRenderTarget="" aeRenderTargetSize="(768,1024)" aeRenderTargetCenter="(384,512)" aeRenderTargetRegion="(768,1024)" isGridEffect="0" scale="1" zOrder="0">
+		<action name="CCSpeed" targetTag="0" speed="1">
+			<action name="CCRepeatForEver" targetTag="0">
+				<action name="CCAnimate" targetTag="0" fileNames="" prefix="badger_deft" prefixNum="3" plist="monsters/monster3.plist" delayPerUnit="0.2" loops="1"/>
+			</action>
+		</action>
+	</sprite>
+
+</aeditor>

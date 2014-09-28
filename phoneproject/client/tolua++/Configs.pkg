@@ -1,0 +1,14 @@
+const char* GET_PATH(const char* strPath, const char* strFileName);
+const char* GET_PATH2(const char* strPath, const char* strFileName);
+const char* STRING_WITH_INT(const char * str, int t);
+const char* STRING_WITH_INT2(const char * str, int t);
+const CCSize & GET_WIN_SIZE();
+const CCPoint & GET_POS_CENTOR();
+const float GET_CCOBJECT_DISTANCE(CCNode * obj1, CCNode * obj2);
+const float GET_CCP_DISTANCE(const CCPoint * p1, const CCPoint * p2);
+const float GET_CCP_ANGLE(const CCPoint * p1, const CCPoint * p2);
+const float RADIANS_TO_DEGREES(float radius);
+const float DEGREES_TO_RADIANS(float degrees);
+void SET_NODE_ZORDER(CCNode * node, int zorder);
+bool POINT_INT_NODE(CCNode* node, const CCPoint &pt);
+void SET_SPRITE_TEXTURE(CCSprite* node, const char *fileName);

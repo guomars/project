@@ -1,0 +1,108 @@
+﻿生成启动时间为 2014/7/14 8:52:28。
+     1>项目“D:\phoneproject\client\proj.win32\project.vcxproj”在节点 2 上(build 个目标)。
+     1>InitializeBuildStatus:
+         正在创建“Debug.win32\project.unsuccessfulbuild”，因为已指定“AlwaysCreate”。
+       ClCompile:
+         E:\Program Files\vs2010\VC\bin\CL.exe /c /I. /I..\Classes\action_editor\ /I..\Classes\cocos2dx_support\ /I..\Classes\net /I..\Classes\net\protocol /I..\Classes\net\protocol\inl /I..\Classes\net\protocol\rpcdata /I..\Classes\platform\win32 /I..\Classes\include /I..\Classes\util /I..\Classes /I"D:\phoneproject\client\cocos2d-x_2.1.5a\\extensions" /I"D:\phoneproject\client\cocos2d-x_2.1.5a\extensions\CocoGUILIB" /I"D:\phoneproject\client\cocos2d-x_2.1.5a\extensions\CocoGUILIB\BaseClasses" /I"D:\phoneproject\client\cocos2d-x_2.1.5a\extensions\CocoGUILIB\BaseClasses\Graphics" /I"D:\phoneproject\client\cocos2d-x_2.1.5a\extensions\CocoGUILIB\BaseClasses\Widget" /I"D:\phoneproject\client\cocos2d-x_2.1.5a\extensions\CocoGUILIB\CGraphics" /I"D:\phoneproject\client\cocos2d-x_2.1.5a\extensions\CocoGUILIB\System" /I"D:\phoneproject\client\cocos2d-x_2.1.5a\extensions\CocoGUILIB\Component" /I"D:\phoneproject\client\cocos2d-x_2.1.5a\extensions\CocoGUILIB\UIElements" /I"D:\phoneproject\client\cocos2d-x_2.1.5a\extensions\CocoGUILIB\System\Json" /I"D:\phoneproject\client\cocos2d-x_2.1.5a\extensions\CocoGUILIB\System\Json\lib_json" /I"D:\phoneproject\client\cocos2d-x_2.1.5a\extensions\CocoGUILIB\System\GUICCBReader" /I"D:\phoneproject\client\cocos2d-x_2.1.5a\extensions\CocoGUILIB\System\Json\json" /I"D:\phoneproject\client\cocos2d-x_2.1.5a\extensions\CCArmature\utils" /I"D:\phoneproject\client\cocos2d-x_2.1.5a\extensions\CCArmature\physics" /I"D:\phoneproject\client\cocos2d-x_2.1.5a\extensions\CCArmature\external_tool\tinyxml" /I"D:\phoneproject\client\cocos2d-x_2.1.5a\extensions\CCArmature\external_tool\Json\json" /I"D:\phoneproject\client\cocos2d-x_2.1.5a\extensions\CCArmature\external_tool\Json\lib_json" /I"D:\phoneproject\client\cocos2d-x_2.1.5a\extensions\CCArmature\external_tool\Json" /I"D:\phoneproject\client\cocos2d-x_2.1.5a\extensions\CCArmature\external_tool" /I"D:\phoneproject\client\cocos2d-x_2.1.5a\extensions\CCArmature\editor" /I"D:\phoneproject\client\cocos2d-x_2.1.5a\extensions\CCArmature\display\display_factory" /I"D:\phoneproject\client\cocos2d-x_2.1.5a\extensions\CCArmature\display" /I"D:\phoneproject\client\cocos2d-x_2.1.5a\extensions\CCArmature\datas\display_data" /I"D:\phoneproject\client\cocos2d-x_2.1.5a\extensions\CCArmature\datas" /I"D:\phoneproject\client\cocos2d-x_2.1.5a\extensions\CCArmature\animation" /I"D:\phoneproject\client\cocos2d-x_2.1.5a\extensions\CCArmature" /I"D:\phoneproject\client\cocos2d-x_2.1.5a\cocos2dx" /I"D:\phoneproject\client\cocos2d-x_2.1.5a\cocos2dx\include" /I"D:\phoneproject\client\cocos2d-x_2.1.5a\cocos2dx\kazmath\include" /I"D:\phoneproject\client\cocos2d-x_2.1.5a\cocos2dx\platform\win32" /I"D:\phoneproject\client\cocos2d-x_2.1.5a\cocos2dx\platform\third_party\win32" /I"D:\phoneproject\client\cocos2d-x_2.1.5a\cocos2dx\platform\third_party\win32\OGLES" /I"D:\phoneproject\client\cocos2d-x_2.1.5a\extensions\GUI\CCControlExtension" /I"D:\phoneproject\client\cocos2d-x_2.1.5a\extensions\CCBReader" /I"D:\phoneproject\client\cocos2d-x_2.1.5a\external" /I"D:\phoneproject\client\cocos2d-x_2.1.5a\CocosDenshion\include" /I"D:\phoneproject\client\cocos2d-x_2.1.5a\cocos2dx\platform\win32\libxml2" /I"D:\phoneproject\client\cocos2d-x_2.1.5a\extensions\GUI\CCEditBox" /I"D:\phoneproject\client\cocos2d-x_2.1.5a\cocos2dx\platform\win32\iconv" /I"D:\phoneproject\client\cocos2d-x_2.1.5a\cocos2dx\platform\third_party\win32\pthread" /I"D:\phoneproject\client\cocos2d-x_2.1.5a\cocos2dx\support\zip_support" /I"D:\phoneproject\client\cocos2d-x_2.1.5a\cocos2dx\platform\third_party\win32\zlib" /I"D:\phoneproject\client\cocos2d-x_2.1.5a\\scripting\lua\lua" /I"D:\phoneproject\client\cocos2d-x_2.1.5a\\scripting\lua\tolua" /I"D:\phoneproject\client\cocos2d-x_2.1.5a\\extensions\network" /I"D:\phoneproject\client\cocos2d-x_2.1.5a\\external\libwebsockets\win32\include" /ZI /nologo /W3 /WX- /Od /Oy- /D WIN32 /D _WINDOWS /D STRICT /D _CRT_SECURE_NO_WARNINGS /D _SCL_SECURE_NO_WARNINGS_DEBUG /D COCOS2D_DEBUG=1 /D _UNICODE /D UNICODE /Gm /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Fo"Debug.win32\\" /Fd"Debug.win32\vc100.pdb" /Gd /TP /wd4267 /wd4251 /wd4244 /analyze- /errorReport:prompt ..\Classes\cocos2dx_support\MySelf.cpp ..\Classes\source\DataMgr.cpp ..\Classes\source\MapMgr.cpp /D "WIN32" 
+         MapMgr.cpp
+         DataMgr.cpp
+         正在生成代码...
+         正在编译...
+         MySelf.cpp
+     1>d:\phoneproject\client\classes\cocos2dx_support\myself.cpp(1076): warning C4800: “int”: 将值强制为布尔值“true”或“false”(性能警告)
+     1>d:\phoneproject\client\classes\cocos2dx_support\myself.cpp(1109): warning C4800: “int”: 将值强制为布尔值“true”或“false”(性能警告)
+     1>d:\phoneproject\client\classes\cocos2dx_support\myself.cpp(1796): warning C4800: “int”: 将值强制为布尔值“true”或“false”(性能警告)
+     1>d:\phoneproject\client\classes\cocos2dx_support\myself.cpp(1830): warning C4800: “int”: 将值强制为布尔值“true”或“false”(性能警告)
+     1>d:\phoneproject\client\classes\cocos2dx_support\myself.cpp(1863): warning C4800: “int”: 将值强制为布尔值“true”或“false”(性能警告)
+     1>d:\phoneproject\client\classes\cocos2dx_support\myself.cpp(1995): warning C4800: “int”: 将值强制为布尔值“true”或“false”(性能警告)
+     1>d:\phoneproject\client\classes\cocos2dx_support\myself.cpp(1996): warning C4800: “int”: 将值强制为布尔值“true”或“false”(性能警告)
+     1>d:\phoneproject\client\classes\cocos2dx_support\myself.cpp(2030): warning C4800: “int”: 将值强制为布尔值“true”或“false”(性能警告)
+     1>d:\phoneproject\client\classes\cocos2dx_support\myself.cpp(2031): warning C4800: “int”: 将值强制为布尔值“true”或“false”(性能警告)
+     1>d:\phoneproject\client\classes\cocos2dx_support\myself.cpp(2096): warning C4800: “int”: 将值强制为布尔值“true”或“false”(性能警告)
+     1>d:\phoneproject\client\classes\cocos2dx_support\myself.cpp(2193): warning C4800: “int”: 将值强制为布尔值“true”或“false”(性能警告)
+     1>d:\phoneproject\client\classes\cocos2dx_support\myself.cpp(2226): warning C4800: “int”: 将值强制为布尔值“true”或“false”(性能警告)
+     1>d:\phoneproject\client\classes\cocos2dx_support\myself.cpp(2259): warning C4800: “int”: 将值强制为布尔值“true”或“false”(性能警告)
+     1>d:\phoneproject\client\classes\cocos2dx_support\myself.cpp(2386): warning C4800: “int”: 将值强制为布尔值“true”或“false”(性能警告)
+     1>d:\phoneproject\client\classes\cocos2dx_support\myself.cpp(2419): warning C4800: “int”: 将值强制为布尔值“true”或“false”(性能警告)
+     1>d:\phoneproject\client\classes\cocos2dx_support\myself.cpp(3908): warning C4800: “int”: 将值强制为布尔值“true”或“false”(性能警告)
+     1>d:\phoneproject\client\classes\cocos2dx_support\myself.cpp(3973): warning C4800: “int”: 将值强制为布尔值“true”或“false”(性能警告)
+     1>d:\phoneproject\client\classes\cocos2dx_support\myself.cpp(4200): warning C4800: “int”: 将值强制为布尔值“true”或“false”(性能警告)
+     1>d:\phoneproject\client\classes\cocos2dx_support\myself.cpp(4265): warning C4800: “int”: 将值强制为布尔值“true”或“false”(性能警告)
+     1>d:\phoneproject\client\classes\cocos2dx_support\myself.cpp(4632): warning C4800: “int”: 将值强制为布尔值“true”或“false”(性能警告)
+     1>d:\phoneproject\client\classes\cocos2dx_support\myself.cpp(5127): warning C4800: “int”: 将值强制为布尔值“true”或“false”(性能警告)
+     1>d:\phoneproject\client\classes\cocos2dx_support\myself.cpp(5160): warning C4800: “int”: 将值强制为布尔值“true”或“false”(性能警告)
+     1>d:\phoneproject\client\classes\cocos2dx_support\myself.cpp(5228): warning C4800: “int”: 将值强制为布尔值“true”或“false”(性能警告)
+     1>d:\phoneproject\client\classes\cocos2dx_support\myself.cpp(6434): warning C4800: “int”: 将值强制为布尔值“true”或“false”(性能警告)
+     1>d:\phoneproject\client\classes\cocos2dx_support\myself.cpp(6467): warning C4800: “int”: 将值强制为布尔值“true”或“false”(性能警告)
+     1>d:\phoneproject\client\classes\cocos2dx_support\myself.cpp(6500): warning C4800: “int”: 将值强制为布尔值“true”或“false”(性能警告)
+     1>d:\phoneproject\client\classes\cocos2dx_support\myself.cpp(6597): warning C4800: “int”: 将值强制为布尔值“true”或“false”(性能警告)
+     1>d:\phoneproject\client\classes\cocos2dx_support\myself.cpp(7475): warning C4800: “int”: 将值强制为布尔值“true”或“false”(性能警告)
+     1>d:\phoneproject\client\classes\cocos2dx_support\myself.cpp(7508): warning C4800: “int”: 将值强制为布尔值“true”或“false”(性能警告)
+     1>d:\phoneproject\client\classes\cocos2dx_support\myself.cpp(7930): warning C4800: “int”: 将值强制为布尔值“true”或“false”(性能警告)
+     1>d:\phoneproject\client\classes\cocos2dx_support\myself.cpp(8028): warning C4800: “int”: 将值强制为布尔值“true”或“false”(性能警告)
+     1>d:\phoneproject\client\classes\cocos2dx_support\myself.cpp(8061): warning C4800: “int”: 将值强制为布尔值“true”或“false”(性能警告)
+     1>d:\phoneproject\client\classes\cocos2dx_support\myself.cpp(9006): warning C4800: “int”: 将值强制为布尔值“true”或“false”(性能警告)
+     1>d:\phoneproject\client\classes\cocos2dx_support\myself.cpp(9734): warning C4800: “int”: 将值强制为布尔值“true”或“false”(性能警告)
+     1>d:\phoneproject\client\classes\cocos2dx_support\myself.cpp(9772): warning C4800: “int”: 将值强制为布尔值“true”或“false”(性能警告)
+     1>d:\phoneproject\client\classes\cocos2dx_support\myself.cpp(9807): warning C4800: “int”: 将值强制为布尔值“true”或“false”(性能警告)
+     1>d:\phoneproject\client\classes\cocos2dx_support\myself.cpp(9845): warning C4800: “int”: 将值强制为布尔值“true”或“false”(性能警告)
+     1>d:\phoneproject\client\classes\cocos2dx_support\myself.cpp(10410): warning C4800: “int”: 将值强制为布尔值“true”或“false”(性能警告)
+     1>d:\phoneproject\client\classes\cocos2dx_support\myself.cpp(11054): warning C4800: “int”: 将值强制为布尔值“true”或“false”(性能警告)
+     1>d:\phoneproject\client\classes\cocos2dx_support\myself.cpp(11055): warning C4800: “int”: 将值强制为布尔值“true”或“false”(性能警告)
+         正在生成代码...
+         所有输出均为最新。
+       Link:
+         E:\Program Files\vs2010\VC\bin\link.exe /ERRORREPORT:PROMPT /OUT:"D:\phoneproject\client\cocos2d-x_2.1.5a\Debug.win32\project.exe" /INCREMENTAL /NOLOGO /LIBPATH:"D:\phoneproject\client\cocos2d-x_2.1.5a\Debug.win32\\" libcocos2d.lib opengl32.lib glew32.lib libBox2d.lib libCocosDenshion.lib libExtensions.lib pthreadVCE2.lib libcurl_imp.lib websockets.lib libxml2.lib liblua.lib lua51.lib zlibwapi.lib libzlib.lib kernel32.lib user32.lib gdi32.lib winspool.lib comdlg32.lib advapi32.lib shell32.lib ole32.lib oleaut32.lib uuid.lib odbc32.lib odbccp32.lib /MANIFEST /ManifestFile:"Debug.win32\project.exe.intermediate.manifest" /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /DEBUG /PDB:"D:\phoneproject\client\cocos2d-x_2.1.5a\Debug.win32\project.pdb" /SUBSYSTEM:WINDOWS /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:"D:\phoneproject\client\cocos2d-x_2.1.5a\Debug.win32\project.lib" /MACHINE:X86 Debug.win32\ActionStubs.obj
+         Debug.win32\AEAction.obj
+         Debug.win32\AERenderEffect.obj
+         Debug.win32\CCShake.obj
+         Debug.win32\CCStrokeLabel.obj
+         Debug.win32\GridEffect.obj
+         Debug.win32\GridSprite.obj
+         Debug.win32\MPEffect.obj
+         Debug.win32\CCBProxy.obj
+         Debug.win32\CCLuaBridge.obj
+         Debug.win32\CCLuaEngine.obj
+         Debug.win32\CCLuaStack.obj
+         Debug.win32\CCLuaValue.obj
+         Debug.win32\Cocos2dxLuaLoader.obj
+         Debug.win32\LuaCocos2d.obj
+         Debug.win32\Lua_extensions_CCB.obj
+         Debug.win32\Lua_web_socket.obj
+         Debug.win32\MySelf.obj
+         Debug.win32\tolua_fix.obj
+         Debug.win32\ClientManager.obj
+         Debug.win32\EC_SendC2SCmds.obj
+         Debug.win32\State.obj
+         Debug.win32\stubs.obj
+         Debug.win32\gncoordinate.obj
+         Debug.win32\gnstatic.obj
+         Debug.win32\sha256.obj
+         Debug.win32\AppDelegate.obj
+         Debug.win32\AssetsUpdateMgr.obj
+         Debug.win32\CocosGUIUtils.obj
+         Debug.win32\Configs.obj
+         Debug.win32\DataMgr.obj
+         Debug.win32\EventMgr.obj
+         Debug.win32\gamedata.obj
+         Debug.win32\GFuncMgr.obj
+         Debug.win32\MapMgr.obj
+         Debug.win32\MyTestClass.obj
+         Debug.win32\NetworkMgr.obj
+         Debug.win32\Base64.obj
+         Debug.win32\csvtable.obj
+         Debug.win32\gutil.obj
+         Debug.win32\libcsv.obj
+         Debug.win32\WStrToUTF8.obj
+         Debug.win32\main.obj
+         project.vcxproj -> D:\phoneproject\client\cocos2d-x_2.1.5a\Debug.win32\project.exe
+       Manifest:
+         C:\Program Files\Microsoft SDKs\Windows\v7.0A\bin\mt.exe /nologo /verbose /out:"D:\phoneproject\client\cocos2d-x_2.1.5a\Debug.win32\project.exe.manifest" /manifest Debug.win32\project.exe.intermediate.manifest
+       FinalizeBuildStatus:
+         正在删除文件“Debug.win32\project.unsuccessfulbuild”。
+         正在对“Debug.win32\project.lastbuildstate”执行 Touch 任务。
+     1>已完成生成项目“D:\phoneproject\client\proj.win32\project.vcxproj”(build 个目标)的操作。
+
+生成成功。
+
+已用时间 00:00:22.65

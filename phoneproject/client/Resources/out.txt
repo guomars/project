@@ -1,0 +1,158 @@
+OpenGL version = 4.3.0
+Ready for GLSL
+Ready for OpenGL 2.0
+
+<dict>
+	cocos2d.x.version: 2.1.5a
+	cocos2d.x.compiled_with_profiler: false
+	cocos2d.x.compiled_with_gl_state_cache: true
+	gl.vendor: NVIDIA Corporation
+	gl.renderer: GeForce GT 630/PCIe/SSE2
+	gl.version: 4.3.0
+	gl.max_texture_size: 16384
+	gl.max_texture_units: 192
+	gl.supports_PVRTC: false
+	gl.supports_NPOT: true
+	gl.supports_BGRA8888: false
+	gl.supports_discard_framebuffer: false
+	gl.supports_vertex_array_object: true
+</dict>
+[LUA-print] ************** LUA MAIN BEGIN **********
+[LUA-print] __INIT_RESOURCE_PATH
+[LUA-print] __INIT_RESOURCE_PATH ok.
+[LUA-print] __INIT_DATA_MGR
+[CostMS] __INIT_DATA_MGR ---- 0.000597 second
+[LUA-print] __INIT_DATA_MGR ok.
+[LUA-print] __INIT_CSV_TABLES
+[LUA-print] __INIT_ONE_CSV_TABLE ctest type= 0
+D:\phoneproject\client\Resources\common/csv/ctest.csv |createindex:0 done
+ InitTable D:\phoneproject\client\Resources\common/csv/ctest.csv
+[LUA-print] __INIT_ONE_CSV_TABLE ok.
+[LUA-print] __INIT_ONE_CSV_TABLE map1 type= 0
+D:\phoneproject\client\Resources\common/csv/map1.csv |createindex:0 done
+ InitTable D:\phoneproject\client\Resources\common/csv/map1.csv
+[LUA-print] __INIT_ONE_CSV_TABLE ok.
+[LUA-print] __INIT_ONE_CSV_TABLE mapconfig type= 0
+D:\phoneproject\client\Resources\common/csv/mapconfig.csv |createindex:0 done
+ InitTable D:\phoneproject\client\Resources\common/csv/mapconfig.csv
+[LUA-print] __INIT_ONE_CSV_TABLE ok.
+[LUA-print] __INIT_ONE_CSV_TABLE monsterconfig type= 0
+D:\phoneproject\client\Resources\common/csv/monsterconfig.csv |createindex:0 done
+ InitTable D:\phoneproject\client\Resources\common/csv/monsterconfig.csv
+[LUA-print] __INIT_ONE_CSV_TABLE ok.
+[LUA-print] __INIT_ONE_CSV_TABLE towerconfig type= 0
+D:\phoneproject\client\Resources\common/csv/towerconfig.csv |createindex:0 done
+ InitTable D:\phoneproject\client\Resources\common/csv/towerconfig.csv
+[LUA-print] __INIT_ONE_CSV_TABLE ok.
+[LUA-print] __INIT_ONE_CSV_TABLE skillconfig type= 0
+D:\phoneproject\client\Resources\common/csv/skillconfig.csv |createindex:0 done
+ InitTable D:\phoneproject\client\Resources\common/csv/skillconfig.csv
+[LUA-print] __INIT_ONE_CSV_TABLE ok.
+[LUA-print] __INIT_ONE_CSV_TABLE skillperformconfig type= 0
+D:\phoneproject\client\Resources\common/csv/skillperformconfig.csv |createindex:0 done
+ InitTable D:\phoneproject\client\Resources\common/csv/skillperformconfig.csv
+[LUA-print] __INIT_ONE_CSV_TABLE ok.
+[LUA-print] __INIT_ONE_CSV_TABLE effectconfig type= 0
+D:\phoneproject\client\Resources\common/csv/effectconfig.csv |createindex:0 done
+ InitTable D:\phoneproject\client\Resources\common/csv/effectconfig.csv
+[LUA-print] __INIT_ONE_CSV_TABLE ok.
+[CostMS] __INIT_CSV_TABLES ---- 0.059357 second
+[LUA-print] __INIT_CSV_TABLES ok.
+[LUA-print] __LUA_FILE_FIST_INIT
+[CostMS] __LUA_FILE_FIST_INIT ---- 0.009206 second
+[LUA-print] __LUA_FILE_FIST_INIT ok.
+[LUA-print] __RUN_FIRST_SCENE
+[LUA-print] WelcomeScene:init
+iversion 1100
+file name == [scenes/welcome/welcome.json]
+filename == welcome.json
+[CostMS] createWidgetFromJsonFile: scenes/welcome/welcome.json ---- 0.077292 second
+[CostMS] RecursiveSetWidgetFont: scenes/welcome/welcome.json ---- 0.000602 second
+[LUA-print] __RUN_FIRST_SCENE ok.
+[LUA-print] ************** LUA MAIN END ************
+[LUA-print] MenuScene:init
+iversion 1100
+file name == [scenes/menu/menu.json]
+filename == menu.json
+[CostMS] createWidgetFromJsonFile: scenes/menu/menu.json ---- 0.279031 second
+Currently only supported on iOS and Android!
+Currently only supported on iOS and Android!
+[CostMS] RecursiveSetWidgetFont: scenes/menu/menu.json ---- 0.023544 second
+[LUA-print] network=1
+[LUA-print] MenuScene:OnBtnBegin
+[LUA-print] ChooseMapScene:init
+iversion 1100
+file name == [scenes/choosemap/ChooseMap.json]
+filename == ChooseMap.json
+[CostMS] createWidgetFromJsonFile: scenes/choosemap/ChooseMap.json ---- 0.527149 second
+[CostMS] RecursiveSetWidgetFont: scenes/choosemap/ChooseMap.json ---- 0.001033 second
+[LUA-print] activated_map i=2 activated=1
+[LUA-print] activated_map i=3 activated=0
+[LUA-print] activated_map i=4 activated=0
+[LUA-print] activated_map i=5 activated=0
+[LUA-print] activated_map i=6 activated=0
+[LUA-print] LoadingScene:init
+iversion 1100
+file name == [scenes/loading/loading.json]
+filename == loading.json
+[CostMS] createWidgetFromJsonFile: scenes/loading/loading.json ---- 0.326890 second
+[CostMS] RecursiveSetWidgetFont: scenes/loading/loading.json ---- 0.002450 second
+[LUA-print] LoadingScene process = 5
+[LUA-print] MapScene init require
+[LUA-print] LoadingScene process = 10
+[LUA-print] MapScene:init
+[LUA-print] LoadingScene process = 30
+[LUA-print] MapLogic:create
+[LUA-print] MapLogic:init
+[LUA-print] rows=7 cols=11
+[LUA-print] i=1 begin_row=6 begin_col=0 end_row=3 end_col=5
+[LUA-print] pNow x=1 y=6
+[LUA-print] pNow x=1 y=5
+[LUA-print] pNow x=1 y=4
+[LUA-print] pNow x=1 y=3
+[LUA-print] pNow x=1 y=2
+[LUA-print] pNow x=1 y=1
+[LUA-print] pNow x=2 y=1
+[LUA-print] pNow x=3 y=1
+[LUA-print] pNow x=3 y=2
+[LUA-print] pNow x=3 y=3
+[LUA-print] pNow x=4 y=3
+[LUA-print] pNow x=5 y=3
+[LUA-print] i=2 begin_row=0 begin_col=10 end_row=3 end_col=5
+[LUA-print] pNow x=9 y=0
+[LUA-print] pNow x=9 y=1
+[LUA-print] pNow x=9 y=2
+[LUA-print] pNow x=9 y=3
+[LUA-print] pNow x=9 y=4
+[LUA-print] pNow x=9 y=5
+[LUA-print] pNow x=8 y=5
+[LUA-print] pNow x=7 y=5
+[LUA-print] pNow x=7 y=4
+[LUA-print] pNow x=7 y=3
+[LUA-print] pNow x=6 y=3
+[LUA-print] pNow x=5 y=3
+[CostMS] MapLogic:init ---- 0.034563 second
+[LUA-print] LoadingScene process = 35
+iversion 1100
+file name == [scenes/maps/map1.json]
+filename == map1.json
+[CostMS] createWidgetFromJsonFile: scenes/maps/map1.json ---- 0.188681 second
+[CostMS] RecursiveSetWidgetFont: scenes/maps/map1.json ---- 0.000418 second
+[LUA-print] LoadingScene process = 60
+iversion 1100
+file name == [scenes/maps/towercontrol/towercontrol.json]
+filename == towercontrol.json
+[CostMS] createWidgetFromJsonFile: scenes/maps/towercontrol/towercontrol.json ---- 1.237393 second
+Currently only supported on iOS and Android!
+Currently only supported on iOS and Android!
+Currently only supported on iOS and Android!
+Currently only supported on iOS and Android!
+Currently only supported on iOS and Android!
+[CostMS] RecursiveSetWidgetFont: scenes/maps/towercontrol/towercontrol.json ---- 0.008604 second
+[LUA-print] LoadingScene process = 65
+[LUA-print] LoadingScene process = 70
+[LUA-print] LoadingScene process = 85
+[LUA-print] LoadingScene process = 90
+[LUA-print] LoadingScene process = 95
+[LUA-print] LoadingScene process = 100
+cocos2d: deallocing CCDirector 00B87388

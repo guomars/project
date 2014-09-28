@@ -1,0 +1,401 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="include">
+      <UniqueIdentifier>{591c2fca-bd5a-4b1f-97ee-78775fa05a6f}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="source">
+      <UniqueIdentifier>{10474f36-bfe4-4639-9093-fdab736dbf86}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="cocos2dx_support">
+      <UniqueIdentifier>{c0b56f84-9392-40e1-899b-151ccd3ef282}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="platform">
+      <UniqueIdentifier>{94f6225a-1404-42d8-a854-d253b3bdedb1}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="action_editor">
+      <UniqueIdentifier>{45e0d5b2-5b66-4994-962b-ae9202c7fde1}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="net">
+      <UniqueIdentifier>{fbb0f175-10bb-4670-8b6b-2d87aa829388}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="net\protocol">
+      <UniqueIdentifier>{0ec4ebd0-56b7-4d71-a946-418a78b8cc22}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="net\protocol\inl">
+      <UniqueIdentifier>{b30b745c-fecd-4f0e-a7d5-b116d4f8bca2}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="util">
+      <UniqueIdentifier>{92ad7760-9ab5-4ece-8d1a-b1bf2753427b}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="platform\win32">
+      <UniqueIdentifier>{e96c8e82-cdcb-4d3c-8984-3bb0b8516c0c}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="..\Classes\include\AppDelegate.h">
+      <Filter>include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\include\CocosGUIUtils.h">
+      <Filter>include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\include\Configs.h">
+      <Filter>include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\include\DataMgr.h">
+      <Filter>include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\include\EC_IvtrTypes.h">
+      <Filter>include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\include\EC_RoleTypes.h">
+      <Filter>include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\include\EventMgr.h">
+      <Filter>include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\include\GFuncMgr.h">
+      <Filter>include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\include\MyTestClass.h">
+      <Filter>include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\include\NetworkMgr.h">
+      <Filter>include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\action_editor\ActionStubs.h">
+      <Filter>action_editor</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\action_editor\AEAction.h">
+      <Filter>action_editor</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\action_editor\AERenderEffect.h">
+      <Filter>action_editor</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\action_editor\CCStrokeLabel.h">
+      <Filter>action_editor</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\action_editor\FightConf.h">
+      <Filter>action_editor</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\cocos2dx_support\CCBProxy.h">
+      <Filter>cocos2dx_support</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\cocos2dx_support\CCLuaBridge.h">
+      <Filter>cocos2dx_support</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\cocos2dx_support\CCLuaEngine.h">
+      <Filter>cocos2dx_support</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\cocos2dx_support\CCLuaStack.h">
+      <Filter>cocos2dx_support</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\cocos2dx_support\CCLuaValue.h">
+      <Filter>cocos2dx_support</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\cocos2dx_support\Cocos2dxLuaLoader.h">
+      <Filter>cocos2dx_support</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\cocos2dx_support\Lua_extensions_CCB.h">
+      <Filter>cocos2dx_support</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\cocos2dx_support\Lua_web_socket.h">
+      <Filter>cocos2dx_support</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\cocos2dx_support\LuaCocos2d.h">
+      <Filter>cocos2dx_support</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\cocos2dx_support\tolua_fix.h">
+      <Filter>cocos2dx_support</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\net\callid.hxx">
+      <Filter>net</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\net\ClientManager.h">
+      <Filter>net</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\net\EC_GPDataType.h">
+      <Filter>net</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\net\EC_SendC2SCmds.h">
+      <Filter>net</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\net\gnetdef.h">
+      <Filter>net</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\net\protoerrno.h">
+      <Filter>net</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\net\rpcdefs.h">
+      <Filter>net</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\net\State.hxx">
+      <Filter>net</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\net\protocol\challenge.hpp">
+      <Filter>net\protocol</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\net\protocol\response.hpp">
+      <Filter>net\protocol</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\util\A3DVector.h">
+      <Filter>util</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\util\ABaseDef.h">
+      <Filter>util</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\util\AChar.h">
+      <Filter>util</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\util\Counter.h">
+      <Filter>util</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\util\vector.h">
+      <Filter>util</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\util\WStrToUTF8.h">
+      <Filter>util</Filter>
+    </ClInclude>
+    <ClInclude Include="main.h">
+      <Filter>include</Filter>
+    </ClInclude>
+    <ClInclude Include="resource.h">
+      <Filter>include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\action_editor\CCShake.h">
+      <Filter>action_editor</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\include\AssetsUpdateMgr.h">
+      <Filter>include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\util\Base64.h">
+      <Filter>util</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\util\csv.h">
+      <Filter>util</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\util\csvtable.h">
+      <Filter>util</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\include\gamedata.h">
+      <Filter>include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\util\gutil.h">
+      <Filter>util</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\platform\win32\gnactiveio.h">
+      <Filter>platform\win32</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\platform\win32\zlib.h">
+      <Filter>platform\win32</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\platform\win32\gnbyteorder.h">
+      <Filter>platform\win32</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\platform\win32\gncompress.h">
+      <Filter>platform\win32</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\platform\win32\gnconf.h">
+      <Filter>platform\win32</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\platform\win32\gncoordinate.h">
+      <Filter>platform\win32</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\platform\win32\gnerrno.h">
+      <Filter>platform\win32</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\platform\win32\gnmarshal.h">
+      <Filter>platform\win32</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\platform\win32\gnmppc.h">
+      <Filter>platform\win32</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\platform\win32\gnnetio.h">
+      <Filter>platform\win32</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\platform\win32\gnoctets.h">
+      <Filter>platform\win32</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\platform\win32\gnpassiveio.h">
+      <Filter>platform\win32</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\platform\win32\gnpollio.h">
+      <Filter>platform\win32</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\platform\win32\gnproto.h">
+      <Filter>platform\win32</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\platform\win32\gnrpc.h">
+      <Filter>platform\win32</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\platform\win32\gnsecure.h">
+      <Filter>platform\win32</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\platform\win32\gntimer.h">
+      <Filter>platform\win32</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\platform\win32\iolib.h">
+      <Filter>platform\win32</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\platform\win32\sha256.h">
+      <Filter>platform\win32</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\platform\win32\streamcompress.h">
+      <Filter>platform\win32</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\platform\win32\zconf.h">
+      <Filter>platform\win32</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\include\MapMgr.h">
+      <Filter>include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\action_editor\GridEffect.h">
+      <Filter>action_editor</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\action_editor\GridSprite.h">
+      <Filter>action_editor</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\action_editor\MPEffect.h">
+      <Filter>action_editor</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="..\Classes\source\AppDelegate.cpp">
+      <Filter>source</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\source\CocosGUIUtils.cpp">
+      <Filter>source</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\source\Configs.cpp">
+      <Filter>source</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\source\DataMgr.cpp">
+      <Filter>source</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\source\EventMgr.cpp">
+      <Filter>source</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\source\GFuncMgr.cpp">
+      <Filter>source</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\source\MyTestClass.cpp">
+      <Filter>source</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\source\NetworkMgr.cpp">
+      <Filter>source</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\action_editor\ActionStubs.cpp">
+      <Filter>action_editor</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\action_editor\AEAction.cpp">
+      <Filter>action_editor</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\action_editor\AERenderEffect.cpp">
+      <Filter>action_editor</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\action_editor\CCStrokeLabel.cpp">
+      <Filter>action_editor</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\cocos2dx_support\CCBProxy.cpp">
+      <Filter>cocos2dx_support</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\cocos2dx_support\CCLuaBridge.cpp">
+      <Filter>cocos2dx_support</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\cocos2dx_support\CCLuaEngine.cpp">
+      <Filter>cocos2dx_support</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\cocos2dx_support\CCLuaStack.cpp">
+      <Filter>cocos2dx_support</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\cocos2dx_support\CCLuaValue.cpp">
+      <Filter>cocos2dx_support</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\cocos2dx_support\Cocos2dxLuaLoader.cpp">
+      <Filter>cocos2dx_support</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\cocos2dx_support\Lua_extensions_CCB.cpp">
+      <Filter>cocos2dx_support</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\cocos2dx_support\Lua_web_socket.cpp">
+      <Filter>cocos2dx_support</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\cocos2dx_support\LuaCocos2d.cpp">
+      <Filter>cocos2dx_support</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\cocos2dx_support\MySelf.cpp">
+      <Filter>cocos2dx_support</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\cocos2dx_support\tolua_fix.c">
+      <Filter>cocos2dx_support</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\net\ClientManager.cpp">
+      <Filter>net</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\net\EC_SendC2SCmds.cpp">
+      <Filter>net</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\net\State.cxx">
+      <Filter>net</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\net\stubs.cxx">
+      <Filter>net</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\util\WStrToUTF8.cpp">
+      <Filter>util</Filter>
+    </ClCompile>
+    <ClCompile Include="main.cpp">
+      <Filter>source</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\action_editor\CCShake.cpp">
+      <Filter>action_editor</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\source\AssetsUpdateMgr.cpp">
+      <Filter>source</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\util\Base64.cpp">
+      <Filter>util</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\util\libcsv.c">
+      <Filter>util</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\util\csvtable.cpp">
+      <Filter>util</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\source\gamedata.cpp">
+      <Filter>source</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\util\gutil.cpp">
+      <Filter>util</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\platform\win32\gncoordinate.cpp">
+      <Filter>platform\win32</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\platform\win32\gnstatic.cpp">
+      <Filter>platform\win32</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\platform\win32\sha256.cpp">
+      <Filter>platform\win32</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\source\MapMgr.cpp">
+      <Filter>source</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\action_editor\GridEffect.cpp">
+      <Filter>action_editor</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\action_editor\GridSprite.cpp">
+      <Filter>action_editor</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\action_editor\MPEffect.cpp">
+      <Filter>action_editor</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="..\Classes\net\protocol\inl\challenge">
+      <Filter>net\protocol\inl</Filter>
+    </None>
+    <None Include="..\Classes\net\protocol\inl\response">
+      <Filter>net\protocol\inl</Filter>
+    </None>
+  </ItemGroup>
+</Project>

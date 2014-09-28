@@ -1,0 +1,7 @@
+class UIRootWidget : public UIContainerWidget
+{
+public:
+    UIRootWidget();
+    ~UIRootWidget();
+    static UIRootWidget* create();
+};

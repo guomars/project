@@ -1,0 +1,21 @@
+class UIInputManager
+{
+public:
+    UIInputManager();
+    ~UIInputManager();
+    void registWidget(UIWidget* widget);
+    void uiSceneHasChanged();
+    void sortWidgets(UIWidget* widget);
+    void sortRootWidgets(UIWidget* root);
+    void removeManageredWidget(UIWidget* widget);
+    UIWidget* checkEventWidget(const CCPoint &touchPoint);
+    void addCheckedDoubleClickWidget(UIWidget* widget);
+    void update(float dt);
+    bool onTouchBegan(CCTouch* touch);
+    bool onTouchMoved(CCTouch* touch);
+    bool onTouchEnd(CCTouch* touch);
+    bool onTouchCancelled(CCTouch* touch);
+    
+    void setRootWidget(UIWidget* root);
+    UIWidget* getRootWidget();
+};

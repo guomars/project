@@ -1,0 +1,20 @@
+<?xml version="1.0"?>
+<UIProject xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <filePath>D:\kapai2\cocos2d-x_2.1.5a\projects\uidata\meadow\meadow.xml.ui</filePath>
+  <Version>1.1.0.0</Version>
+  <Name>meadow</Name>
+  <ProjectDir>D:\kapai2\cocos2d-x_2.1.5a\projects\uidata\meadow</ProjectDir>
+  <JsonFileName>meadow.json</JsonFileName>
+  <Resources>D:\kapai2\cocos2d-x_2.1.5a\projects\uidata\meadow\Resources</Resources>
+  <JsonFolder>D:\kapai2\cocos2d-x_2.1.5a\projects\uidata\meadow\Json</JsonFolder>
+  <JsonList>
+    <string>meadow.json</string>
+  </JsonList>
+  <imageFileList />
+  <JsonSuffix>.json</JsonSuffix>
+  <CurrentUIJson>meadow.json</CurrentUIJson>
+  <CanvasSize>
+    <Width>768</Width>
+    <Height>1024</Height>
+  </CanvasSize>
+</UIProject>

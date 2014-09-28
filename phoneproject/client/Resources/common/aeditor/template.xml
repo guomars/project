@@ -1,0 +1,586 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<templates>
+	
+	<!--
+	Defined by Sunjunbo
+	[Base Type] int,float,CCPoint,Bezier,strs
+	[Ignored]   CCDeccelAmplitude,CCAccelAmplitude,CCAccelDeccelAmplitude 貌似是网格相关，振幅相关操作，不知道什么样的动作能用振幅，所以忽略
+	-->
+	
+	<!--todo CCActionCamera  CCOrbitCamera-->
+	
+	<!--ignored: CCAction === CCSpeed CCFollow-->
+	
+	<!--1. CCSequence && CCSpawn-->
+	<!--actionlist  0: 无 1: 一个 2: 多个-->
+	<action name="CCSequence" type="CCActionInterval" note="[组合动作] 顺序执行" actionList="2" isToUI="true"/>
+	<action name="CCSpawn" type="CCActionInterval" note="[组合动作] 同时执行" actionList="2" isToUI="true"/>
+	
+	<!--2. CCActionInstant-->
+	<action name="AE_Condition" type="CCActionInstant" note="[条件动作] 分支" isToUI="true" isOnlyUI="true" actionList="1">
+		<!-- GREAT, GREAT_EQUAL, EQUAL, LESS, LESS_EQUAL -->
+		<param  name="conditionType"  type="str"  note="条件类型"  default="EQUAL"/>
+		<param  name="conditionParam" type="int"  note="条件参数"  default="0"/>
+	</action>
+	
+	<action name="AE_SetData" type="CCActionInstant" note="[立即动作] 设置数据" isToUI="false">
+		<param  name="key"   	 type="str"  note="主键"/>
+		<param  name="value"   type="str"    note="内容"/>
+	</action>
+	
+	<action name="CCShow" type="CCActionInstant" note="[立即动作] 显示" isToUI="true"/>
+	<action name="CCHide" type="CCActionInstant" note="[立即动作] 隐藏" isToUI="true"/>
+	<action name="CCToggleVisibility" type="CCActionInstant" note="[立即动作] 转换可见" isToUI="true"/>
+	<action name="CCFlipX" type="CCActionInstant" note="[立即动作] X方向翻转" isToUI="true">
+		<param  name="x"   type="int"  note="是否翻转[0/1: 不翻转/翻转]"/>
+	</action>
+	<action name="CCFlipY" type="CCActionInstant" note="[立即动作] Y方向翻转" isToUI="true">
+		<param  name="y"   type="int"  note="是否翻转[0/1: 不翻转/翻转]"/>
+	</action>
+	<action name="CCPlace" type="CCActionInstant" note="[立即动作] 设置坐标" isToUI="true">
+		<param  name="position"   type="CCPoint"  note="绝对坐标"/>
+	</action>
+	<action name="CCRemoveSelf" type="CCActionInstant" note="[立即动作] 删除" isToUI="false">
+	</action>
+	<action name="AE_PlayWav" type="CCActionInstant" note="[立即动作] 播放声音" isToUI="true">
+		<param  name="wavFile"   type="str"  note="wav声音文件路径"/>
+	</action>
+	<action name="AE_ZOrder" type="CCActionInstant" note="[立即动作] 修改ZOrder" isToUI="true">
+		<param  name="zOrder"   type="int"  note="zOrder"/>
+	</action>
+	<action name="AE_Scale" type="CCActionInstant" note="[立即动作] 修改缩放" isToUI="true">
+		<param  name="scale"   type="float"  note="缩放系数"/>
+	</action>
+	<action name="AE_Particle_Plist" type="CCActionInstant" note="[立即动作] 添加Plist粒子" isToUI="true">
+		<param  name="plist"   type="str"  note="plist粒子文件"/>
+		<param  name="scale"   type="float"    note="缩放因子" default="1"/>
+		<param  name="pos"     type="CCPoint"  note="相对位置"/>
+		<param  name="zOrder"  type="int"  note="zOrder"/>
+		<param  name="tag"     type="int"  note="标签"/>
+	</action>
+	<action name="AE_Particle_Sys" type="CCActionInstant" note="[立即动作] 添加内置粒子" isToUI="true">
+		<param  name="sysname" type="str"      note="内置粒子类型"   default="CCParticleFireworks"/>
+		<param  name="res"     type="str"      note="粒子图片资源"/>
+		<param  name="number"  type="int"      note="粒子数目" default="200"/>
+		<param  name="scale"   type="float"    note="缩放因子" default="1"/>
+		<param  name="pos"     type="CCPoint"  note="相对位置"/>
+		<param  name="zOrder"  type="int"  note="zOrder"/>
+		<param  name="tag"     type="int"  note="标签"/>
+	</action>
+	<action name="AE_Add_Label" type="CCActionInstant" note="[立即动作] 添加文字" isToUI="true">
+		<param  name="pos"          type="CCPoint"  note="相对位置"/>
+		<param  name="label"        type="str"      note="文字"/>
+		<param  name="fontDefFile"  type="str"      note="字体描述文件"/>
+		<param  name="font"         type="str"      note="字体"/>
+		<param  name="fontSize"     type="float"    note="字体大小"/>
+		<param  name="r"    type="int"    note="红通道(r)" default="255"/>
+		<param  name="g"    type="int"    note="绿通道(g)" default="255"/>
+		<param  name="b"    type="int"    note="蓝通道(b)" default="255"/>
+		<param  name="duration"  type="float"    note="持续秒（0/1: 立即显示/从左到右顺序显示）"/>
+		<param  name="srcBlendFactor" type="str"  note="源混合因子（纹理）"  default="GL_SRC_ALPHA"/>
+		<param  name="dstBlendFactor" type="str"  note="目标混合因子（背景）"  default="GL_ONE_MINUS_SRC_ALPHA"/>
+		<param  name="tag"  type="int"    note="标签"/>
+	</action>
+	<action name="AE_Remove_Child" type="CCActionInstant" note="[立即动作] -- 通过标签删除子精灵" isToUI="true">
+		<param  name="tag"     type="int"  note="标签"/>
+	</action>
+	<action name="AE_ChildAnimation" type="CCActionInstant" note="[立即动作] 添加子序列帧动画" isToUI="true">
+		<param  name="fileNames"   type="strs"  note="序列帧文件名(file1,file2)"/>
+		<param  name="prefix"      type="str"   note="序列帧前缀名"/>
+		<param  name="prefixNum"   type="int"   note="使用前缀的数量"/>
+		<param  name="plist"       type="str"   note="plist文件名"/>
+		<param  name="delayPerUnit"   type="float"  note="每帧时间（秒）" default="0.2"/>
+		<param  name="loops"          type="int"  note="循环次数（小于等于0无限）" default="1"/>
+		<param  name="scale"          type="float"    note="缩放因子" default="1"/>
+		<param  name="pos"            type="CCPoint"  note="相对父偏移"/>
+		<param  name="srcBlendFactor" type="str"  note="源混合因子（纹理）"  default="GL_SRC_ALPHA"/>
+		<param  name="dstBlendFactor" type="str"  note="目标混合因子（背景）"  default="GL_ONE_MINUS_SRC_ALPHA"/>
+		<param  name="zOrder"         type="int"  note="zOrder"/>
+		<param  name="tag"            type="int"  note="标签"/>
+	</action>
+	
+	<action name="AE_ChangeShader" type="CCActionInstant" note="[立即动作] -- 修改Shader" isToUI="true">
+		<!-- ShaderBlur,  -->
+		<param  name="shaderName"  type="str"  note="Shader名称"  default="ShaderBlur"/>
+	</action>
+	
+	<!--3. CCActionInterval-->
+	<action name="AE_FadeShaderParams1f" type="CCActionInterval" note="[定时动作] -- 修改Shader参数" isToUI="true">
+		<param  name="shaderName"  type="str"  note="Shader名称"  default="ShaderBlur"/>
+		
+		<!-- ShaderParam_Blur,  -->
+		<param  name="paramName1"        type="str"    note="Shader参数名1"    default=""/>
+		<param  name="paramStartValue1"  type="float"  note="Shader参数起始值1"  default="1"/>
+		<param  name="paramEndValue1"    type="float"  note="Shader参数终止值1"  default="1"/>
+		
+		<param  name="paramName2"        type="str"    note="Shader参数名2"    default=""/>
+		<param  name="paramStartValue2"  type="float"  note="Shader参数起始值2"  default="1"/>
+		<param  name="paramEndValue2"    type="float"  note="Shader参数终止值2"  default="1"/>
+		
+		<param  name="paramName3"        type="str"    note="Shader参数名3"    default=""/>
+		<param  name="paramStartValue3"  type="float"  note="Shader参数起始值3"  default="1"/>
+		<param  name="paramEndValue3"    type="float"  note="Shader参数终止值3"  default="1"/>
+		
+		<param  name="duration"  type="float" note="持续时间（秒）" default="2"/>
+	</action>
+	
+	<action name="AE_UiMoveFromDelta" type="CCActionInterval" note="[定时动作] UI控件 -- 初始移动" isToUI="true" isOnlyUI="true">
+		<param  name="duration"  type="float" note="持续时间（秒）" default="2"/>
+	</action>
+	
+	<action name="AE_UiMoveToWidget" type="CCActionInterval" note="[定时动作] UI控件 -- 移动到某控件附近" isToUI="true" isOnlyUI="true">
+		<param  name="duration"            type="float" note="持续时间（秒）" default="2"/>
+		<param  name="moveToWidgetName"    type="str"   note="移动到的控件名称"/>
+		<param  name="offset"              type="CCPoint"   note="移动到的控件相对偏移"/>
+	</action>
+	
+	<action name="AE_RunAEAction" type="CCActionInstant" note="[立即动作] 执行AE文件中，精灵动作" isToUI="true">
+		<param  name="aeFile"              type="str"   note="ae文件"/>
+		<param  name="spriteName"          type="str"   note="精灵名"/>
+	</action>
+	
+	<action name="AE_AddSubAE" type="CCActionInstant" note="[立即动作] -- 添加子 AE" isToUI="true">
+		<param  name="aeFile"              type="str"     note="ae文件"/>
+		<param  name="alignSprite"         type="str"     note="用于坐标对齐的精灵"/>
+		<param  name="scale"               type="float"   note="缩放"  default="1"/>
+		<param  name="pos"                 type="CCPoint" note="位置"/>
+		<param  name="sprite1"             type="str"     note="精灵1"/>
+		<param  name="resReplaced1"        type="str"     note="资源1"/>
+		<param  name="sprite2"             type="str"     note="精灵2"/>
+		<param  name="resReplaced2"        type="str"     note="资源2"/>
+		<param  name="sprite3"             type="str"     note="精灵3"/>
+		<param  name="resReplaced3"        type="str"     note="资源3"/>
+		<param  name="sprite4"             type="str"     note="精灵4"/>
+		<param  name="resReplaced4"        type="str"     note="资源4"/>
+		<param  name="sprite5"             type="str"     note="精灵5"/>
+		<param  name="resReplaced5"        type="str"     note="资源5"/>
+		<param  name="zOrder"              type="int"     note="zOrder"/>
+		<param  name="tag"                 type="int"     note="标签"/>
+	</action>
+	
+	<action name="AE_AddMpEffect" type="CCActionInstant" note="[立即动作] -- 添加子 MP" isToUI="false">
+		<param  name="mpFile"              type="str"     note="mp文件"/>
+		<param  name="extraAnimationScale" type="float"   note="序列帧额外缩放, 之前写死0.65"  default="0.65"/>
+		<param  name="scale"               type="float"   note="缩放"  default="1"/>
+		<param  name="pos"                 type="CCPoint" note="位置"/>
+		<param  name="zOrder"              type="int"     note="zOrder"/>
+		<param  name="tag"                 type="int"     note="标签"/>
+	</action>
+	
+	<action name="AE_FightGoToTarget" type="CCActionInterval" note="[定时动作] 战斗 -- 飞向目标" isToUI="false" isOnlyFight="true">
+		<param  name="duration"            type="float"   note="持续时间（秒）" default="1"/>
+		<param  name="position"            type="CCPoint"   note="目标坐标的相对位置"/>
+	</action>
+	
+	<action name="GE_TurnOver" type="CCActionInterval" note="[定时动作] 新网格动作 -- 翻转" isGridEffect="true" isToUI="true">
+		<param  name="duration"            type="float"   note="持续时间（秒）" default="2"/>
+		<param  name="degree"              type="float"   note="翻转角度，绝对值大于360转多圈" default="180"/>
+	</action>
+	
+	<action name="GE_Shake" type="CCActionInterval" note="[定时动作] 新网格动作 -- 随机震动" isGridEffect="true" isToUI="true">
+		<param  name="duration"            type="float"   note="持续时间（秒）" default="2"/>
+		<param  name="range"               type="float"   note="震动范围" default="5"/>
+	</action>
+	
+	<action name="GE_EdgeScale" type="CCActionInterval" note="[定时动作] 新网格动作 -- 边缘缩放" isGridEffect="true" isToUI="true">
+		<param  name="duration"            type="float"   note="持续时间（秒）" default="2"/>
+		<param  name="up"                  type="float"   note="上边缩放比例" default="1"/>
+		<param  name="down"                type="float"   note="下边缩放比例" default="1"/>
+		<param  name="left"                type="float"   note="左边缩放比例" default="1"/>
+		<param  name="right"               type="float"   note="右边缩放比例" default="1"/>
+	</action>
+	
+	<action name="GE_Stop" type="CCActionInstant" note="[立即动作] 新网格动作 -- 关闭新网格" isGridEffect="true" isToUI="true">
+	</action>
+	
+	<!--3.1 animation-->
+	
+	<action name="CCAnimate" type="CCActionInterval" note="[定时动作] 动画" isToUI="true">
+		<param  name="fileNames"   type="strs"  note="序列帧文件名(file1,file2)"/>
+		<param  name="prefix"      type="str"   note="序列帧前缀名"/>
+		<param  name="prefixNum"   type="int"   note="使用前缀的数量"/>
+		<param  name="plist"       type="str"   note="plist文件名"/>
+		<param  name="delayPerUnit"   type="float"  note="每帧时间（秒）" default="0.2"/>
+		<param  name="loops"          type="int"  note="循环次数" default="1"/>
+	</action>
+	
+	<action name="AE_FaceToPos" type="CCActionInterval" note="[定时动作] 修改朝向">
+		<param  name="faceToPos"   type="CCPoint"  note="面向的坐标"/>
+		<param  name="initDegree"  type="float"    note="初始角度[0,360]"/>
+		<param  name="duration"    type="float"    note="持续时间"/>
+	</action>
+	
+	
+	<!--貌似嵌套的Spawn没有完全恢复？？？-->
+	<action name="CCReverseTime" type="CCActionInterval" note="[定时动作] 反向执行动作" actionList="1" isToUI="true">
+	</action>
+	
+	<action name="CCDelayTime" type="CCActionInterval" note="[定时动作] 延迟" isToUI="true">
+		<param  name="d"  type="float" note="延迟（秒）" default="2"/>
+	</action>
+	
+	<action name="CCTintTo" type="CCActionInterval" note="[定时动作] 修改颜色（绝对）" isToUI="true">
+		<param  name="duration"  type="float" note="持续时间（秒）" default="2"/>
+		<param  name="r"   type="int" note="红色通道（0-255）"/>
+		<param  name="g"   type="int" note="绿色通道（0-255）"/>
+		<param  name="b"   type="int" note="蓝色通道（0-255）"/>
+	</action>
+	
+	<action name="CCTintBy" type="CCActionInterval" note="[定时动作] 修改颜色（相对）" isToUI="true">
+		<param  name="duration"  type="float" note="持续时间（秒）" default="2"/>
+		<param  name="r"   type="int" note="红色通道（0-255）"/>
+		<param  name="g"   type="int" note="绿色通道（0-255）"/>
+		<param  name="b"   type="int" note="蓝色通道（0-255）"/>
+	</action>
+	
+	<!--貌似不会影响children-->
+	<action name="CCFadeTo" type="CCActionInterval" note="[定时动作] 渐变到指定不透明度" isToUI="true">
+		<param  name="duration"  type="float" note="持续时间（秒）" default="2"/>
+		<param  name="opacity"   type="int" note="不透明度（0-255）"/>
+	</action>
+	
+	<!--貌似不会影响children-->
+	<action name="CCFadeIn" type="CCActionInterval" note="[定时动作] 渐现" isToUI="true">
+		<param  name="d"  type="float" note="持续时间（秒）" default="2"/>
+	</action>
+	
+	<!--貌似不会影响children-->
+	<action name="CCFadeOut" type="CCActionInterval" note="[定时动作] 渐隐" isToUI="true">
+		<param  name="d"  type="float" note="持续时间（秒）" default="2"/>
+	</action>
+	
+	<!--添加影响children的-->
+	<action name="AE_FadeIn_WithAllChild" type="CCActionInterval" note="[定时动作] 渐现（影响子精灵）" isToUI="true">
+		<param  name="d"  type="float" note="持续时间（秒）" default="2"/>
+	</action>
+	
+	<!--添加影响children的-->
+	<action name="AE_FadeOut_WithAllChild" type="CCActionInterval" note="[定时动作] 渐隐（影响子精灵）" isToUI="true">
+		<param  name="d"  type="float" note="持续时间（秒）" default="2"/>
+	</action>
+	
+	<action name="CCScaleBy" type="CCActionInterval" note="[定时动作] 相对缩放" isToUI="true">
+		<param  name="duration"   type="float" note="持续时间（秒）" default="2"/>
+		<param  name="s"  type="float" note="缩放倍数"/>
+	</action>
+	
+	<action name="CCScaleTo" type="CCActionInterval" note="[定时动作] 绝对缩放" isToUI="true">
+		<param  name="duration"   type="float" note="持续时间（秒）" default="2"/>
+		<param  name="s"  type="float" note="缩放倍数"/>
+	</action>
+	
+	<action name="CCBezierBy" type="CCActionInterval" note="[定时动作] 相对贝塞尔" isToUI="true">
+		<param  name="t"   type="float" note="持续时间（秒）" default="2"/>
+		<param  name="bezier"  type="Bezier" note="贝塞尔参数（终点，控制点1，控制点2）"/>
+	</action>
+	
+	<action name="CCBezierTo" type="CCActionInterval" note="[定时动作] 绝对贝塞尔" isToUI="true">
+		<param  name="t"   type="float" note="持续时间（秒）" default="2"/>
+		<param  name="bezier"  type="Bezier" note="贝塞尔参数（终点，控制点1，控制点2）"/>
+	</action>
+	
+	<action name="CCSkewBy" type="CCActionInterval" note="[定时动作] 相对扭曲" isToUI="true">
+		<param  name="t"   type="float" note="持续时间（秒）" default="2"/>
+		<param  name="sx"  type="float" note="X 方向扭曲度数"/>
+		<param  name="sy"  type="float" note="Y 方向扭曲度数"/>
+	</action>
+	
+	<action name="CCRepeat" type="CCActionInterval" note="[定时动作] 重复" actionList="1" isToUI="true">
+		<param  name="times"  type="int" note="次数" default="1"/>
+	</action>
+	
+	<action name="CCRepeatForEver" type="CCActionInterval" note="[定时动作] 永久重复" actionList="1" isToUI="true">
+	</action>
+	
+	<action name="CCRotateTo" type="CCActionInterval" note="[定时动作] 旋转到绝对角度" isToUI="true">
+		<param  name="duration"  type="float" note="持续时间（秒）" default="2"/>
+		<param  name="deltaAngel"  type="float" note="旋转到度数: 度数[-360，360]"/>
+	</action>
+	
+	<action name="CCRotateBy" type="CCActionInterval" note="[定时动作] 旋转相对角度" isToUI="true">
+		<param  name="duration"  type="float" note="持续时间（秒）" default="2"/>
+		<param  name="deltaAngel"  type="float" note="旋转相对度数: 度数[-360，360]"/>
+	</action>
+	
+	<action name="CCMoveTo" type="CCActionInterval" note="[定时动作] 移动到绝对坐标" isToUI="true">
+		<param  name="duration"  type="float" note="持续时间（秒）" default="2"/>
+		<param  name="position"  type="CCPoint" note="绝对坐标（x,y）"/>
+	</action>
+	
+	<action name="CCMoveBy" type="CCActionInterval" note="[定时动作] 移动偏移量" isToUI="true">
+		<param  name="duration"  type="float" note="持续时间（秒）" default="2"/>
+		<param  name="deltaPosition"  type="CCPoint" note="偏移量（x,y）"/>
+	</action>
+	
+	<action name="CCJumpTo" type="CCActionInterval" note="[定时动作] 跳动到绝对位置" isToUI="true">
+		<param  name="duration"  type="float" note="持续时间（秒）" default="2"/>
+		<param  name="position"  type="CCPoint" note="绝对坐标（x,y）"/>
+		<param  name="height"  type="float" note="高度"/>
+		<param  name="jumps"   type="int" note="步数" default="1"/>
+	</action>
+	
+	<action name="CCJumpBy" type="CCActionInterval" note="[定时动作] 跳动到相对位置" isToUI="true">
+		<param  name="duration"  type="float" note="持续时间（秒）" default="2"/>
+		<param  name="position"  type="CCPoint" note="偏移量（x,y）"/>
+		<param  name="height"  type="float" note="高度"/>
+		<param  name="jumps"   type="int" note="步数" default="1"/>
+	</action>
+	
+	<action name="CCBlink" type="CCActionInterval" note="[定时动作] 闪烁" isToUI="true">
+		<param  name="duration"  type="float" note="持续时间（秒）" default="2"/>
+		<param  name="blinks"  type="int" note="闪烁次数"/>
+	</action>
+	
+	<action name="CCShake" type="CCActionInterval" note="[定时动作] 震动" isToUI="true">
+		<param  name="duration"    type="float" note="持续时间（秒）" default="2"/>
+		<param  name="amplitude"   type="CCPoint" note="振幅"/>
+		<param  name="isDampening" type="int" note="1/0:是否抑制"/>
+		<param  name="shakeNum"    type="int" note="震动次数"/>
+	</action>
+	
+	<action name="CCSpeed" type="CCActionInterval" note="[加速动作] 加速倍数" actionList="1">
+		<param  name="speed"   type="float"  note="加速倍数"/>
+	</action>
+	
+	<!--相机-->
+	<action name="CCOrbitCamera" type="CCActionInterval" note="[相机动作] 球面旋转">
+		<param  name="t"             type="float"  note="持续时间(秒)"/>
+		<param  name="radius"        type="float"  note="起始半径"/>
+		<param  name="deltaRadius"   type="float"  note="半径差"/>
+		<param  name="angleZ"        type="float"  note="起始z轴角度"/>
+		<param  name="deltaAngleZ"   type="float"  note="旋转z轴角差"/>
+		<param  name="angleX"        type="float"  note="起始x轴角度"/>
+		<param  name="deltaAngleX"   type="float"  note="旋转x轴角差"/>
+	</action>
+	
+	<!--缓动-->
+	<action name="CCEaseIn" type="CCActionInterval" note="[缓动动作] 标准缓入" actionList="1" isToUI="true">
+		<param  name="rate"   type="float"  note="系数"/>
+	</action>
+	<action name="CCEaseOut" type="CCActionInterval" note="[缓动动作] 标准缓出" actionList="1" isToUI="true">
+		<param  name="rate"   type="float"  note="系数"/>
+	</action>
+	<action name="CCEaseInOut" type="CCActionInterval" note="[缓动动作] 标准缓入缓出" actionList="1" isToUI="true">
+		<param  name="rate"   type="float"  note="系数"/>
+	</action>
+	<action name="CCEaseExponentialIn" type="CCActionInterval" note="[缓动动作] 指数缓入" actionList="1" isToUI="true">
+	</action>
+	<action name="CCEaseExponentialOut" type="CCActionInterval" note="[缓动动作] 指数缓出" actionList="1" isToUI="true">
+	</action>
+	<action name="CCEaseExponentialInOut" type="CCActionInterval" note="[缓动动作] 指数缓入缓出" actionList="1" isToUI="true">
+	</action>
+	<action name="CCEaseSineIn" type="CCActionInterval" note="[缓动动作] 正弦（sin）缓入" actionList="1" isToUI="true">
+	</action>
+	<action name="CCEaseSineOut" type="CCActionInterval" note="[缓动动作] 正弦（sin）缓出" actionList="1" isToUI="true">
+	</action>
+	<action name="CCEaseSineInOut" type="CCActionInterval" note="[缓动动作] 正弦（sin）缓入缓出" actionList="1" isToUI="true">
+	</action>
+	<action name="CCEaseElasticIn" type="CCActionInterval" note="[缓动动作] 弹性缓入" actionList="1" isToUI="true">
+		<param  name="period"   type="float"  note="周期（默认0.3秒）"/>
+	</action>
+	<action name="CCEaseElasticOut" type="CCActionInterval" note="[缓动动作] 弹性缓出" actionList="1" isToUI="true">
+		<param  name="period"   type="float"  note="周期（默认0.3秒）" default="0.3"/>
+	</action>
+	<action name="CCEaseElasticInOut" type="CCActionInterval" note="[缓动动作] 弹性缓入缓出" actionList="1" isToUI="true">
+		<param  name="period"   type="float"  note="周期（默认0.3秒）" default="0.3"/>
+	</action>
+	<action name="CCEaseBounceIn" type="CCActionInterval" note="[缓动动作] 跳跃缓入" actionList="1" isToUI="true">
+	</action>
+	<action name="CCEaseBounceOut" type="CCActionInterval" note="[缓动动作] 跳跃缓出" actionList="1" isToUI="true">
+	</action>
+	<action name="CCEaseBounceInOut" type="CCActionInterval" note="[缓动动作] 跳跃缓入缓出" actionList="1" isToUI="true">
+	</action>
+	<action name="CCEaseBackIn" type="CCActionInterval" note="[缓动动作] 回震缓入" actionList="1" isToUI="true">
+	</action>
+	<action name="CCEaseBackOut" type="CCActionInterval" note="[缓动动作] 回震缓出" actionList="1" isToUI="true">
+	</action>
+	<action name="CCEaseBackInOut" type="CCActionInterval" note="[缓动动作] 回震缓入缓出" actionList="1" isToUI="true">
+	</action>
+	
+	<!--4. Grid Related-->
+	<!--ignored: CCStopGrid, CCReuseGrid-->
+	<action name="CCStopGrid" type="CCActionInstant" note="[网格动作] 立即关闭网格" isToUI="true">
+	</action>
+		
+	<!-- 4.1 振幅操作（网格相关）先注释掉，没搞懂为啥不生效-->
+	<!--
+	<action name="CCDeccelAmplitude" type="CCActionInterval" note="[网格]减速震动" actionList="1" actionRequire="grid">
+		<param  name="duration"   type="float"  note="持续时间（秒）"/>
+	</action>
+	<action name="CCAccelAmplitude" type="CCActionInterval" note="[网格]加速震动" actionList="1" actionRequire="grid">
+		<param  name="duration"   type="float"  note="持续时间（秒）"/>
+	</action>
+	<action name="CCAccelDeccelAmplitude" type="CCActionInterval" note="[网格]变速震动" actionList="1" actionRequire="grid">
+		<param  name="duration"   type="float"  note="持续时间（秒）"/>
+	</action>
+	-->
+	
+	<!-- 4.2 TiledGrid3D -->
+	<action name="CCShakyTiles3D" type="CCGridAction" note="[网格动作] 震动扭曲" isToUI="true">
+		<param  name="duration"   type="float"    note="持续时间（秒）" default="2"/>
+		<param  name="gridSize"   type="CCPoint"  note="格子大小" default="(5,5)"/>
+		<param  name="range"      type="int"      note="扭曲范围" default="10"/>
+		<param  name="shakeZ"     type="int"      note="是否扭曲z轴"/>
+	</action>
+	
+	<!-- Not Effected, TODO why ?? -->
+	<!--
+	<action name="CCShatteredTiles3D" type="CCGridAction" note="[网格]破碎扭曲">
+		<param  name="duration"   type="float"    note="持续时间（秒）"/>
+		<param  name="gridSize"   type="CCPoint"  note="格子大小"/>
+		<param  name="range"      type="int"      note="扭曲范围"/>
+		<param  name="shakeZ"     type="int"      note="是否扭曲z轴"/>
+	</action>
+	-->
+	
+	<action name="CCShuffleTiles" type="CCGridAction" note="[网格动作] 破碎散开" isToUI="true">
+		<param  name="duration"   type="float"    note="持续时间（秒）" default="2"/>
+		<param  name="gridSize"   type="CCPoint"  note="格子大小" default="(5,5)"/>
+		<param  name="speed"      type="int"      note="速度" default="10"/>
+	</action>
+	
+	<action name="CCFadeOutTRTiles" type="CCGridAction" note="[网格动作] 右上开始淡出" isToUI="true">
+		<param  name="duration"   type="float"    note="持续时间（秒）" default="2"/>
+		<param  name="gridSize"   type="CCPoint"  note="格子大小" default="(5,5)"/>
+	</action>
+	
+	<action name="CCFadeOutBLTiles" type="CCGridAction" note="[网格动作] 左上开始淡出" isToUI="true">
+		<param  name="duration"   type="float"    note="持续时间（秒）" default="2"/>
+		<param  name="gridSize"   type="CCPoint"  note="格子大小" default="(5,5)"/>
+	</action>
+		
+	<action name="CCFadeOutUpTiles" type="CCGridAction" note="[网格动作] 上方开始淡出" isToUI="true">
+		<param  name="duration"   type="float"    note="持续时间（秒）" default="2"/>
+		<param  name="gridSize"   type="CCPoint"  note="格子大小" default="(5,5)"/>
+	</action>
+	
+	<action name="CCFadeOutDownTiles" type="CCGridAction" note="[网格动作] 下方开始淡出" isToUI="true">
+		<param  name="duration"   type="float"    note="持续时间（秒）" default="2"/>
+		<param  name="gridSize"   type="CCPoint"  note="格子大小" default="(5,5)"/>
+	</action>
+	
+	<action name="CCTurnOffTiles" type="CCGridAction" note="[网格动作] 方块消失" isToUI="true">
+		<param  name="duration"   type="float"    note="持续时间（秒）" default="2"/>
+		<param  name="gridSize"   type="CCPoint"  note="格子大小" default="(5,5)"/>
+		<param  name="seed"   type="int"  note="随机种子"/>
+	</action>
+	
+	<action name="CCWavesTiles3D" type="CCGridAction" note="[网格动作] 波浪震动(Tiles)" isToUI="true">
+		<param  name="duration"   type="float"    note="持续时间（秒）" default="2"/>
+		<param  name="gridSize"   type="CCPoint"  note="格子大小" default="(5,5)"/>
+		<param  name="waves"      type="int"  note="波浪数" default="3"/>
+		<param  name="amplitude"  type="float"  note="振幅" default="10"/>
+	</action>
+	
+	<action name="CCJumpTiles3D" type="CCGridAction" note="[网格动作] 跳动震动" isToUI="true">
+		<param  name="duration"   type="float"    note="持续时间（秒）" default="2"/>
+		<param  name="gridSize"   type="CCPoint"  note="格子大小" default="(5,5)"/>
+		<param  name="numberOfJumps"      type="int"  note="跳动数目" default="3"/>
+		<param  name="amplitude"  type="float"  note="振幅" default="3"/>
+	</action>
+	
+	<action name="CCSplitRows" type="CCGridAction" note="[网格动作] 切分行,向外飞去" isToUI="true">
+		<param  name="duration"   type="float"    note="持续时间（秒）" default="2"/>
+		<param  name="rows"   type="int"  note="行数" default="3"/>
+	</action>
+	
+	<action name="CCSplitCols" type="CCGridAction" note="[网格动作] 切分列,向外飞去" isToUI="true">
+		<param  name="duration"   type="float"    note="持续时间（秒）" default="2"/>
+		<param  name="cols"   type="int"  note="列数"  default="3"/>
+	</action>
+	
+	<action name="CCPageTurn3D" type="CCGridAction" note="[网格动作] 翻页" isToUI="true">
+		<param  name="duration"   type="float"    note="持续时间（秒）" default="2"/>
+		<param  name="gridSize"   type="CCPoint"  note="格子大小" default="(5,5)"/>
+	</action>
+	
+	<action name="CCWaves3D" type="CCGridAction" note="[网格动作] 波浪震动3D" isToUI="true">
+		<param  name="duration"   type="float"    note="持续时间（秒）" default="2"/>
+		<param  name="gridSize"   type="CCPoint"  note="格子大小" default="(5,5)"/>
+		<param  name="waves"      type="int"      note="波浪数" default="3"/>
+		<param  name="amplitude"  type="float"    note="振幅" default="10"/>
+	</action>
+	
+	<action name="CCWaves" type="CCGridAction" note="[网格动作] 波浪震动2D" isToUI="true">
+		<param  name="duration"   type="float"    note="持续时间（秒）" default="2"/>
+		<param  name="gridSize"   type="CCPoint"  note="格子大小" default="(5,5)"/>
+		<param  name="waves"      type="int"      note="波浪数" default="3"/>
+		<param  name="amplitude"  type="float"    note="振幅" default="10"/>
+		<param  name="horizontal" type="int"      note="1/0:是否水平波动" default="1"/>
+		<param  name="vertical"   type="int"      note="1/0:是否垂直波动" default="1"/>
+	</action>
+	
+	<action name="CCFlipX3D" type="CCGridAction" note="[网格动作] X轴3D翻转" isToUI="true">
+		<param  name="duration"   type="float"    note="持续时间（秒）" default="2"/>
+	</action>
+	
+	<action name="CCFlipY3D" type="CCGridAction" note="[网格动作] Y轴3D翻转" isToUI="true">
+		<param  name="duration"   type="float"    note="持续时间（秒）" default="2"/>
+	</action>
+	
+	<action name="CCLens3D" type="CCGridAction" note="[网格动作] 放大镜[有问题...]" isToUI="true">
+		<param  name="duration"   type="float"    note="持续时间（秒）" default="2"/>
+		<param  name="gridSize"   type="CCPoint"  note="格子大小" default="(5,5)"/>
+		<param  name="position"   type="CCPoint"  note="位置"/>
+		<param  name="radius"  type="float"    note="半径" default="10"/>
+	</action>
+	
+	<action name="CCRipple3D" type="CCGridAction" note="[网格动作] 水波[有问题...]" isToUI="true">
+		<param  name="duration"   type="float"    note="持续时间（秒）" default="2"/>
+		<param  name="gridSize"   type="CCPoint"  note="格子大小" default="(5,5)"/>
+		<param  name="position"   type="CCPoint"  note="位置"/>
+		<param  name="radius"  type="float"    note="半径" default="10"/>
+		<param  name="waves"      type="int"      note="波浪数" default="3"/>
+		<param  name="amplitude"  type="float"    note="振幅" default="10"/>
+	</action>
+	
+	<action name="CCLiquid" type="CCGridAction" note="[网格动作] 流体效果" isToUI="true">
+		<param  name="duration"   type="float"    note="持续时间（秒）" default="2"/>
+		<param  name="gridSize"   type="CCPoint"  note="格子大小" default="(5,5)"/>
+		<param  name="waves"      type="int"      note="波浪数" default="3"/>
+		<param  name="amplitude"  type="float"    note="振幅" default="10"/>
+	</action>
+	
+	<action name="CCTwirl" type="CCGridAction" note="[网格动作] 扭曲" isToUI="true">
+		<param  name="duration"   type="float"    note="持续时间（秒）" default="2"/>
+		<param  name="gridSize"   type="CCPoint"  note="格子大小" default="(5,5)"/>
+		<param  name="position"   type="CCPoint"  note="位置"/>
+		<param  name="twirls"      type="int"     note="扭曲参数" default="1"/>
+		<param  name="amplitude"  type="float"    note="振幅" default="10"/>
+	</action>
+	
+	
+	
+	
+	
+	
+	
+	
+	
+</templates>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

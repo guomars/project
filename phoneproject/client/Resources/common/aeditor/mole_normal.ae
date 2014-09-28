@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<aeditor>
+
+	<config totalSecond="0.8" playSpeed="1" nextAE="" testDelaySecond="0" str1="" point1="(0,0)" str2="" point2="(0,0)" str3="" point3="(0,0)" str4="" point4="(0,0)" str5="" point5="(0,0)" testBackGround="scenes/mole/back.png"/>
+
+	<sprite name="normal" res="scenes/mole/t6.png" rotate="0" label="" isCloseButton="0" openNewAEButton="" font="" fontSize="12" fontColor="(255,255,255)" isHide="0" ry="" pos="P1" anchorPos="(0.5,0.5)" srcBlendFactor="GL_SRC_ALPHA" dstBlendFactor="GL_ONE_MINUS_SRC_ALPHA" aeRenderTarget="" aeRenderTargetSize="(768,1024)" aeRenderTargetCenter="(384,512)" aeRenderTargetRegion="(768,1024)" isGridEffect="0" scale="1" zOrder="0">
+		<action name="CCSequence" targetTag="0">
+			<action name="CCAnimate" targetTag="0" fileNames="scenes/mole/t1.png,scenes/mole/t2.png,scenes/mole/t3.png,scenes/mole/t4.png,scenes/mole/t5.png," prefix="" prefixNum="0" plist="" delayPerUnit="0.02" loops="1"/>
+			<action name="AE_SetData" targetTag="0" key="mole_can_touch" value="1"/>
+			<action name="CCAnimate" targetTag="0" fileNames="scenes/mole/t6.png," prefix="" prefixNum="0" plist="" delayPerUnit="0.5" loops="1"/>
+			<action name="AE_SetData" targetTag="0" key="mole_can_touch" value="0"/>
+			<action name="CCAnimate" targetTag="0" fileNames="scenes/mole/t5.png,scenes/mole/t4.png,scenes/mole/t3.png,scenes/mole/t2.png,scenes/mole/t1.png," prefix="" prefixNum="0" plist="" delayPerUnit="0.02" loops="1"/>
+			<action name="CCAnimate" targetTag="0" fileNames="scenes/mole/emptyhole.png," prefix="" prefixNum="0" plist="" delayPerUnit="0.1" loops="1"/>
+		</action>
+	</sprite>
+
+</aeditor>

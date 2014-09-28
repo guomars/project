@@ -1,0 +1,291 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{2A4D6A96-7E66-4E9C-878A-FB35964F2E90}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>ActionEditorUI</RootNamespace>
+    <AssemblyName>ActionEditorUI</AssemblyName>
+    <TargetFrameworkVersion>v2.0</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <IsWebBootstrapper>false</IsWebBootstrapper>
+    <PublishUrl>发布\</PublishUrl>
+    <Install>true</Install>
+    <InstallFrom>Disk</InstallFrom>
+    <UpdateEnabled>false</UpdateEnabled>
+    <UpdateMode>Foreground</UpdateMode>
+    <UpdateInterval>7</UpdateInterval>
+    <UpdateIntervalUnits>Days</UpdateIntervalUnits>
+    <UpdatePeriodically>false</UpdatePeriodically>
+    <UpdateRequired>false</UpdateRequired>
+    <MapFileExtensions>true</MapFileExtensions>
+    <ApplicationRevision>0</ApplicationRevision>
+    <ApplicationVersion>1.0.0.%2a</ApplicationVersion>
+    <UseApplicationTrust>false</UseApplicationTrust>
+    <BootstrapperEnabled>true</BootstrapperEnabled>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Debug|x86'">
+    <DebugSymbols>true</DebugSymbols>
+    <OutputPath>..\Resources\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <DebugType>full</DebugType>
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <ErrorReport>prompt</ErrorReport>
+    <CodeAnalysisRuleSet>MinimumRecommendedRules.ruleset</CodeAnalysisRuleSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Release|x86'">
+    <OutputPath>..\Resources\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <Optimize>true</Optimize>
+    <DebugType>pdbonly</DebugType>
+    <PlatformTarget>x86</PlatformTarget>
+    <ErrorReport>prompt</ErrorReport>
+    <CodeAnalysisRuleSet>MinimumRecommendedRules.ruleset</CodeAnalysisRuleSet>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="ActionTemplate.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AETypeForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AETypeForm.Designer.cs">
+      <DependentUpon>AETypeForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ColorOptionRGB.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="ColorOptionRGB.Designer.cs">
+      <DependentUpon>ColorOptionRGB.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ColorOptionRGBA.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="ColorOptionRGBA.Designer.cs">
+      <DependentUpon>ColorOptionRGBA.cs</DependentUpon>
+    </Compile>
+    <Compile Include="CondTypeForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CondTypeForm.Designer.cs">
+      <DependentUpon>CondTypeForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="GLBlendFactorForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="GLBlendFactorForm.Designer.cs">
+      <DependentUpon>GLBlendFactorForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="GlobalConfForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="GlobalConfForm.Designer.cs">
+      <DependentUpon>GlobalConfForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Json.cs" />
+    <Compile Include="MainFrame.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MainFrame.Designer.cs">
+      <DependentUpon>MainFrame.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ActionListForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ActionListForm.Designer.cs">
+      <DependentUpon>ActionListForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="OffsetTypeForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="OffsetTypeForm.Designer.cs">
+      <DependentUpon>OffsetTypeForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ParticleDesign.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ParticleDesign.Designer.cs">
+      <DependentUpon>ParticleDesign.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ParticleOption.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="ParticleOption.Designer.cs">
+      <DependentUpon>ParticleOption.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ParticleTypeForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ParticleTypeForm.Designer.cs">
+      <DependentUpon>ParticleTypeForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="PropForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="PropForm.Designer.cs">
+      <DependentUpon>PropForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="RegionMoveForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="RegionMoveForm.Designer.cs">
+      <DependentUpon>RegionMoveForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="RegionParamForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="RegionParamForm.Designer.cs">
+      <DependentUpon>RegionParamForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ColorOptionDelta.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="ColorOptionDelta.Designer.cs">
+      <DependentUpon>ColorOptionDelta.cs</DependentUpon>
+    </Compile>
+    <Compile Include="TimeSpanForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="TimeSpanForm.Designer.cs">
+      <DependentUpon>TimeSpanForm.cs</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="AETypeForm.resx">
+      <DependentUpon>AETypeForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ColorOptionDelta.resx">
+      <DependentUpon>ColorOptionDelta.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ColorOptionRGB.resx">
+      <DependentUpon>ColorOptionRGB.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ColorOptionRGBA.resx">
+      <DependentUpon>ColorOptionRGBA.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CondTypeForm.resx">
+      <DependentUpon>CondTypeForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GLBlendFactorForm.resx">
+      <DependentUpon>GLBlendFactorForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GlobalConfForm.resx">
+      <DependentUpon>GlobalConfForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MainFrame.resx">
+      <DependentUpon>MainFrame.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ActionListForm.resx">
+      <DependentUpon>ActionListForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="OffsetTypeForm.resx">
+      <DependentUpon>OffsetTypeForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ParticleDesign.resx">
+      <DependentUpon>ParticleDesign.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ParticleOption.resx">
+      <DependentUpon>ParticleOption.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ParticleTypeForm.resx">
+      <DependentUpon>ParticleTypeForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <EmbeddedResource Include="PropForm.resx">
+      <DependentUpon>PropForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="RegionMoveForm.resx">
+      <DependentUpon>RegionMoveForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="RegionParamForm.resx">
+      <DependentUpon>RegionParamForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="TimeSpanForm.resx">
+      <DependentUpon>TimeSpanForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <BootstrapperPackage Include="Microsoft.Net.Client.3.5">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1 Client Profile</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.5.SP1">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icon_anim_next_frame.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icon_anim_pause.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icon_anim_run.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icon_anim_stop.png" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <PropertyGroup>
+    <PostBuildEvent>
+    </PostBuildEvent>
+  </PropertyGroup>
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

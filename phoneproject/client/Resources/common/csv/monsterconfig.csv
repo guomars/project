@@ -1,0 +1,6 @@
+FCTB1.00,,,,,,
+索引,移动速度(像素/秒),血量,护甲,技能,死亡奖励银币,动画
+index,speed,hp,armor,skills,prize,animation
+1,40,100,10,0,10,monster1.ae
+2,50,200,15,6,20,monster2.ae
+3,60,300,20,6,30,monster3.ae

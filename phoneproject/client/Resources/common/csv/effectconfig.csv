@@ -1,0 +1,8 @@
+FCTB1.00,,,,,,,,
+索引,类型,规则(0无限制 1不可叠加),特效的动画,限时效果:存在时间(秒),限次效果:生效次数,限次效果:生效延迟,限次效果:生效间隔,改变移动速度效果:改变速度效果(0-1)
+index,type,rule,animation,life,count,count_delay,count_interval,change_speed
+1,1,0,effect1.ae,0.5,0,0,0,0.9
+2,1,0,effect1.ae,0.6,0,0,0,0.8
+3,1,0,effect1.ae,0.7,0,0,0,0.7
+4,1,0,effect1.ae,0.8,0,0,0,0.6
+5,1,0,effect1.ae,0.9,0,0,0,0.5

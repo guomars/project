@@ -1,0 +1,16 @@
+enum
+{
+	EVENT_BEGIN,
+
+	EVENT_UIWIDGET_PUSH_DOWN,
+	EVENT_UIWIDGET_MOVE,
+	EVENT_UIWIDGET_RELEASE,
+
+	EVENT_END,
+};
+
+class GFuncMgr
+{
+		static GFuncMgr * GetInstance();
+		bool AddFunc(CCObject * obj, CCObject * parent, unsigned short event_type, std::string func_name);
+};

@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<aeditor>
+
+	<config jasonFile="scenes/welcome/welcome.json" testDelaySecond="0" condition="0" str1="" point1="(0,0)" str2="" point2="(0,0)" str3="" point3="(0,0)" str4="" point4="(0,0)" str5="" point5="(0,0)" testBackGround=""/>
+
+	<sprite name="welcome_image" initOffset="(0,0)" visible="2" >
+		<action name="CCFadeOut" targetTag="0" d="2"/>
+	</sprite>
+
+</aeditor>

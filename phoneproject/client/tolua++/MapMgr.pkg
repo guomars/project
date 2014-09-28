@@ -1,0 +1,16 @@
+struct  aStar
+{
+		aStar* GetNext();
+		int GetX();
+		int GetY();
+		void Release();
+};
+
+class GMapMgr
+{
+		static GMapMgr * GetInstance();
+		void SetMaxSize(int max_row, int max_col);
+		void SetMapGrid(int row, int col, unsigned char grid);
+		int GetMapGrid(int row, int col);
+		aStar* AStarStart(int X,int Y,int xE,int yE);
+};

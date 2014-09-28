@@ -1,0 +1,20 @@
+<?xml version="1.0"?>
+<UIProject xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <filePath>D:\phoneproject\client\uidata\ChooseMap\ChooseMap.xml.ui</filePath>
+  <Version>1.1.0.0</Version>
+  <Name>ChooseMap</Name>
+  <ProjectDir>D:\phoneproject\client\uidata\ChooseMap</ProjectDir>
+  <JsonFileName>ChooseMap.json</JsonFileName>
+  <Resources>D:\phoneproject\client\uidata\ChooseMap\Resources</Resources>
+  <JsonFolder>D:\phoneproject\client\uidata\ChooseMap\Json</JsonFolder>
+  <JsonList>
+    <string>ChooseMap.json</string>
+  </JsonList>
+  <imageFileList />
+  <JsonSuffix>.json</JsonSuffix>
+  <CurrentUIJson>ChooseMap.json</CurrentUIJson>
+  <CanvasSize>
+    <Width>1024</Width>
+    <Height>768</Height>
+  </CanvasSize>
+</UIProject>

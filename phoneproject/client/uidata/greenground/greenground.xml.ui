@@ -1,0 +1,20 @@
+<?xml version="1.0"?>
+<UIProject xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <filePath>D:\kapai2\cocos2d-x_2.1.5a\projects\uidata\greenground\greenground.xml.ui</filePath>
+  <Version>1.1.0.0</Version>
+  <Name>greenground</Name>
+  <ProjectDir>D:\kapai2\cocos2d-x_2.1.5a\projects\uidata\greenground</ProjectDir>
+  <JsonFileName>greenground.json</JsonFileName>
+  <Resources>D:\kapai2\cocos2d-x_2.1.5a\projects\uidata\greenground\Resources</Resources>
+  <JsonFolder>D:\kapai2\cocos2d-x_2.1.5a\projects\uidata\greenground\Json</JsonFolder>
+  <JsonList>
+    <string>greenground.json</string>
+  </JsonList>
+  <imageFileList />
+  <JsonSuffix>.json</JsonSuffix>
+  <CurrentUIJson>greenground.json</CurrentUIJson>
+  <CanvasSize>
+    <Width>1024</Width>
+    <Height>768</Height>
+  </CanvasSize>
+</UIProject>

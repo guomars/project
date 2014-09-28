@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<aeditor>
+
+	<config jasonFile="ui/login.json" testDelaySecond="0" condition="0" str1="" point1="(0,0)" str2="" point2="(0,0)" str3="" point3="(0,0)" str4="" point4="(0,0)" str5="" point5="(0,0)" testBackGround=""/>
+
+	<sprite name="login_button_servers,login_button_login" initOffset="(0,0)" visible="2" >
+		<action name="CCRepeatForEver" targetTag="0">
+			<action name="CCSequence" targetTag="0">
+				<action name="CCFadeTo" targetTag="0" duration="0.5" opacity="255"/>
+				<action name="CCDelayTime" targetTag="0" d="0.2"/>
+				<action name="CCFadeTo" targetTag="0" duration="0.5" opacity="100"/>
+			</action>
+		</action>
+	</sprite>
+
+	<sprite name="login_name_loading" initOffset="(0,0)" visible="2" >
+		<action name="CCRepeatForEver" targetTag="0">
+			<action name="CCSequence" targetTag="0">
+				<action name="CCFadeTo" targetTag="0" duration="0.5" opacity="255"/>
+				<action name="CCDelayTime" targetTag="0" d="0.2"/>
+				<action name="CCFadeTo" targetTag="0" duration="0.5" opacity="100"/>
+			</action>
+		</action>
+	</sprite>
+
+	<sprite name="login_logo" initOffset="(0,0)" visible="2" >
+		<action name="CCSequence" targetTag="0">
+			<action name="AE_Scale" targetTag="0" scale="2"/>
+			<action name="CCDelayTime" targetTag="0" d="2"/>
+			<action name="CCEaseExponentialInOut" targetTag="0">
+				<action name="CCSpawn" targetTag="0">
+					<action name="AE_UiMoveFromDelta" targetTag="0" duration="1"/>
+					<action name="CCMoveTo" targetTag="0" duration="1" position="(390,923)"/>
+					<action name="CCScaleTo" targetTag="0" duration="1" s="1.1"/>
+				</action>
+			</action>
+		</action>
+	</sprite>
+
+	<sprite name="login_pic_loginbase" initOffset="(0,0)" visible="2" >
+		<action name="AE_Particle_Plist" targetTag="0" plist="effect/particle/login.plist" scale="1" pos="(0,0)" tag="0"/>
+	</sprite>
+
+	<sprite name="login_donghua" initOffset="(0,0)" visible="0" >
+		<action name="CCSequence" targetTag="0">
+			<action name="AE_ChildAnimation" targetTag="0" fileNames="animation/login_yuanpan.png," prefix="" prefixNum="0" plist="" delayPerUnit="0.2" loops="1" scale="1" pos="(0,58)" srcBlendFactor="GL_ONE" dstBlendFactor="GL_ONE_MINUS_SRC_ALPHA" tag="1000000"/>
+			<action name="CCRotateBy" targetTag="1000000" duration="400" deltaAngel="9000"/>
+			<action name="AE_FadeOut_WithAllChild" targetTag="1000000" d="2"/>
+			<action name="CCFadeIn" targetTag="1000000" d="5"/>
+		</action>
+		<action name="CCSequence" targetTag="0">
+			<action name="AE_ChildAnimation" targetTag="0" fileNames="animation/login_zhongshang.png," prefix="" prefixNum="0" plist="" delayPerUnit="0.2" loops="1" scale="1" pos="(0,80)" srcBlendFactor="GL_ONE" dstBlendFactor="GL_ONE_MINUS_SRC_ALPHA" tag="1000001"/>
+			<action name="AE_ChildAnimation" targetTag="0" fileNames="animation/login_zhongxia.png," prefix="" prefixNum="0" plist="" delayPerUnit="0.2" loops="1" scale="1" pos="(10,-80)" srcBlendFactor="GL_ONE" dstBlendFactor="GL_ONE_MINUS_SRC_ALPHA" tag="1000002"/>
+			<action name="AE_ChildAnimation" targetTag="0" fileNames="animation/login_zuo1.png," prefix="" prefixNum="0" plist="" delayPerUnit="0.2" loops="1" scale="1" pos="(-170,110)" srcBlendFactor="GL_ONE" dstBlendFactor="GL_ONE_MINUS_SRC_ALPHA" tag="1000003"/>
+			<action name="AE_ChildAnimation" targetTag="0" fileNames="animation/login_you1.png," prefix="" prefixNum="0" plist="" delayPerUnit="0.2" loops="1" scale="1" pos="(195,105)" srcBlendFactor="GL_ONE" dstBlendFactor="GL_ONE_MINUS_SRC_ALPHA" tag="1000004"/>
+			<action name="AE_ChildAnimation" targetTag="0" fileNames="animation/login_zuo2.png," prefix="" prefixNum="0" plist="" delayPerUnit="0.2" loops="1" scale="1" pos="(-200,-27)" srcBlendFactor="GL_ONE" dstBlendFactor="GL_ONE_MINUS_SRC_ALPHA" tag="1000005"/>
+			<action name="AE_ChildAnimation" targetTag="0" fileNames="animation/login_you2.png," prefix="" prefixNum="0" plist="" delayPerUnit="0.2" loops="1" scale="1" pos="(200,-68)" srcBlendFactor="GL_ONE" dstBlendFactor="GL_ONE_MINUS_SRC_ALPHA" tag="1000006"/>
+			<action name="CCShow" targetTag="0"/>
+			<action name="AE_FadeOut_WithAllChild" targetTag="0" d="0"/>
+			<action name="CCDelayTime" targetTag="0" d="0.2"/>
+			<action name="AE_FadeIn_WithAllChild" targetTag="1000002" d="0.5"/>
+			<action name="CCSequence" targetTag="0">
+				<action name="AE_Particle_Plist" targetTag="0" plist="effect/particle/409dihuo02.plist" scale="0.5" pos="(0,-40)" tag="100001"/>
+				<action name="AE_Particle_Plist" targetTag="0" plist="effect/particle/409dihuo02.plist" scale="0.5" pos="(0,-40)" tag="100001"/>
+				<action name="AE_Particle_Plist" targetTag="0" plist="effect/particle/409dihuo02.plist" scale="0.5" pos="(25,-40)" tag="100001"/>
+				<action name="AE_Particle_Plist" targetTag="0" plist="effect/particle/409dihuo02.plist" scale="0.5" pos="(25,-40)" tag="100001"/>
+				<action name="AE_Particle_Plist" targetTag="0" plist="effect/particle/409dihuo02.plist" scale="0.5" pos="(50,-40)" tag="100001"/>
+				<action name="AE_Particle_Plist" targetTag="0" plist="effect/particle/409dihuo02.plist" scale="0.5" pos="(50,-40)" tag="100001"/>
+				<action name="AE_Particle_Plist" targetTag="0" plist="effect/particle/409dihuo02.plist" scale="0.5" pos="(75,-40)" tag="100001"/>
+				<action name="AE_Particle_Plist" targetTag="0" plist="effect/particle/409dihuo02.plist" scale="0.5" pos="(75,-40)" tag="100001"/>
+				<action name="AE_Particle_Plist" targetTag="0" plist="effect/particle/409dihuo02.plist" scale="0.5" pos="(100,-40)" tag="100001"/>
+				<action name="AE_Particle_Plist" targetTag="0" plist="effect/particle/409dihuo02.plist" scale="0.5" pos="(100,-40)" tag="100001"/>
+			</action>
+			<action name="CCDelayTime" targetTag="0" d="0.2"/>
+			<action name="AE_FadeIn_WithAllChild" targetTag="1000005" d="0.5"/>
+			<action name="CCDelayTime" targetTag="0" d="0.2"/>
+			<action name="AE_FadeIn_WithAllChild" targetTag="1000006" d="0.5"/>
+			<action name="CCSequence" targetTag="0">
+				<action name="AE_Particle_Plist" targetTag="0" plist="effect/particle/407shandian01.plist" scale="0.3" pos="(200,-50)" tag="100002"/>
+				<action name="AE_Particle_Plist" targetTag="0" plist="effect/particle/407shandian02.plist" scale="0.5" pos="(230,-50)" tag="100003"/>
+				<action name="AE_Particle_Plist" targetTag="0" plist="effect/particle/407shandian01.plist" scale="0.8" pos="(200,-130)" tag="100004"/>
+				<action name="CCRotateTo" targetTag="100002" duration="0" deltaAngel="40"/>
+				<action name="CCRotateTo" targetTag="100003" duration="0" deltaAngel="45"/>
+				<action name="CCRotateTo" targetTag="100004" duration="0" deltaAngel="30"/>
+			</action>
+			<action name="CCDelayTime" targetTag="0" d="0.2"/>
+			<action name="AE_FadeIn_WithAllChild" targetTag="1000003" d="0.5"/>
+			<action name="CCDelayTime" targetTag="0" d="0.2"/>
+			<action name="AE_FadeIn_WithAllChild" targetTag="1000004" d="0.5"/>
+			<action name="CCDelayTime" targetTag="0" d="0.5"/>
+			<action name="AE_FadeIn_WithAllChild" targetTag="1000001" d="0.5"/>
+			<action name="CCSequence" targetTag="0">
+				<action name="AE_ChildAnimation" targetTag="0" fileNames="animation/choujiangfazhen02.png," prefix="" prefixNum="0" plist="" delayPerUnit="0.2" loops="1" scale="0.4" pos="(0,190)" srcBlendFactor="GL_SRC_ALPHA" dstBlendFactor="GL_ONE_MINUS_SRC_ALPHA" tag="100012"/>
+				<action name="CCRotateTo" targetTag="100012" duration="1200" deltaAngel="24000"/>
+			</action>
+			<action name="CCSequence" targetTag="0">
+				<action name="AE_ChildAnimation" targetTag="0" fileNames="animation/dengluqiu03.png," prefix="" prefixNum="0" plist="" delayPerUnit="0.2" loops="1" scale="0.7" pos="(0,190)" srcBlendFactor="GL_SRC_ALPHA" dstBlendFactor="GL_ONE_MINUS_SRC_ALPHA" tag="100011"/>
+				<action name="CCFadeTo" targetTag="100011" duration="2" opacity="0"/>
+				<action name="CCFadeTo" targetTag="100011" duration="2" opacity="255"/>
+			</action>
+		</action>
+	</sprite>
+
+</aeditor>

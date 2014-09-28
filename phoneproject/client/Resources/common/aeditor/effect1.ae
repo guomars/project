@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<aeditor>
+
+	<config totalSecond="999" playSpeed="1" nextAE="" testDelaySecond="0" str1="" point1="(0,0)" str2="" point2="(0,0)" str3="" point3="(0,0)" str4="" point4="(0,0)" str5="" point5="(0,0)" testBackGround=""/>
+
+	<sprite name="effect" res="" rotate="0" label="" isCloseButton="0" openNewAEButton="" font="" fontSize="12" fontColor="(255,255,255)" isHide="0" ry="" pos="P1" anchorPos="(0.5,0.5)" srcBlendFactor="GL_SRC_ALPHA" dstBlendFactor="GL_ONE_MINUS_SRC_ALPHA" aeRenderTarget="" aeRenderTargetSize="(768,1024)" aeRenderTargetCenter="(384,512)" aeRenderTargetRegion="(768,1024)" isGridEffect="0" scale="1" zOrder="0">
+		<action name="CCAnimate" targetTag="0" fileNames="" prefix="fensechanrao_00" prefixNum="30" plist="effect/animation/fensechanrao.plist" delayPerUnit="0.05" loops="999"/>
+	</sprite>
+
+</aeditor>
